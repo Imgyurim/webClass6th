@@ -7,27 +7,26 @@
     <title>웨이브</title>
 </head>
 <body style="background:#222222;color:#ffffff;">
-    <form action="">
+    <form action="#">
         <div>
-            <h2><b>이메일과 비밀번호</b>만으로<br>
-                <b>Wavve를 즐길 수</b> 있어요!</h2>
-                <label for="user_email"></label>
-                <input required type="text" id="user_email" placeholder="wavve@example.com">
+            <h2><i>이메일과 비밀번호</i>만으로<br>
+                <i>Wavve를 즐길 수</i> 있어요!</h2>
+                <!-- i,b,em,strong 모두 쓸 수 있음 -->
+                <label for="userEmail">이메일</label>
+                <!-- 통신상태에 의해서 안보일 경우를 대비 -->
+                <input required type="text" id="userEmail" placeholder="wavve@example.com">
                 <p><span style="color: gray;">로그인, 비밀번호 찾기, 알림에 사용되니 정확한 이메일을 입력해 주세요.</span></p>
                 <label for="user_pw"></label>
                 <input required type="password" id="user_pw" placeholder="Wavve 비밀번호 설정">
-                
                 <p><span style="color: gray;">비밀번호는 8-20자 이내로 영문 대소문자, 숫자 , 특수문자 중 3가지 이상 혼용하여 입력해 주세요.</span></p>
                 <input type="submit" value="Wavve 회원가입">
-                <h3>또는 다른 서비스 계정으로 가입</h3>
-               <ul>
-                    <li style="list-style: none;">
-                        <a href="#"><img src="../9.폼/formex/ico-common-kakao.png" alt="kakao"></a>
-                        <a href="#"><img src="../9.폼/formex/ico-common-tworld.png" alt="tworld"></a>
-                        <a href="#"><img src="../9.폼/formex/ico-common-naver.png" alt="naver"></a>
-                        <a href="#"><img src="../9.폼/formex/ico-common-facebook.png" alt="facebook"></a>
-                        <a href="#"><img src="../9.폼/formex/ico-common-apple.png" alt="apple"></a>
-                    </li>
+                <h2>또는 다른 서비스 계정으로 가입</h2>
+               <ul clss="snsMenu">
+                    <li><a href="#"><img src="../9.폼/formex/ico-common-kakao.png" alt="kakao"></a></li>
+                    <li><a href="#"><img src="../9.폼/formex/ico-common-tworld.png" alt="tworld"></a></li>
+                    <li><a href="#"><img src="../9.폼/formex/ico-common-naver.png" alt="naver"></a></li>
+                    <li><a href="#"><img src="../9.폼/formex/ico-common-facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="../9.폼/formex/ico-common-apple.png" alt="apple"></a></li>
                </ul>
                 <p><span style="color: gray;">SNS계정으로 간편하게 가입하여 서비스를 이용하실 수 있습니다.<br>
                 기존 POOQ 계정 또는 Wavve 계정과는 연동되지 않으니 이용에 참고하세요.</span></blockquote>
