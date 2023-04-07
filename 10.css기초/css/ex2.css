@@ -1,0 +1,12 @@
+.container{
+    font-size:25px;color:green;
+}
+.container > h2{
+    font-size:40;
+}
+.container p{
+    color:blue
+}
+.under{
+    text-decoration: underline;
+}
