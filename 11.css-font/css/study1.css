@@ -41,7 +41,9 @@ non(기본값) / underline(밑줄) / linethrough(취소선)
 .h{letter-spacing:1rem;}
 .i{word-spacing:20px;}
 .j{word-break:keep-all;}
+/* break-all / keep-all */
 .k{white-space:nowrap}
+/* white space= 공백 */
 /* normal(기본값)/ nowrap(줄바꿈허용x) */
 .l{text-align:justify;}
 /* 
@@ -53,7 +55,7 @@ uppercase(대문자로변형)/ lowercase(소문자로변형) capitalize(앞글�
  */
  .p1{
     /* font-size:24px;
-    font-weight: bold;
+    font-weight: bold;20px 3.2
     font-style: italic;
     font-family:'Times New Romean', Times, serif;
     line-height: 200%; */

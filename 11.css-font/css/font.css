@@ -1,0 +1,21 @@
+@font-face{
+    font-family: myfont;
+    src:url("../font/UhBee\ puding.ttf");
+}
+
+@font-face{
+    font-family: BinggraeMelona;
+    src:url("../font/BinggraeMelona.ttf");
+}
+
+@font-face{
+    font-family: BinggraeMelona-Bold;
+    src:url("../font/BinggraeMelona-Bold.ttf")
+}
+
+@font-face {
+    font-family: 'Bazzi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

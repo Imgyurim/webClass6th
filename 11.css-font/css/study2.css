@@ -1,22 +1,4 @@
-@font-face{
-    font-family: myfont;
-    src:url("../font/UhBee\ puding.ttf");
-}
 .myfont1{font-family: myfont;}
-@font-face{
-    font-family: BinggraeMelona;
-    src:url("../font/BinggraeMelona.ttf");
-}
 .myfont2{font-family: BinggraeMelona;}
-@font-face{
-    font-family: BinggraeMelona-Bold;
-    src:url("../font/BinggraeMelona-Bold.ttf")
-}
 .myfont3{font-family: BinggraeMelona-Bold;}
-@font-face {
-    font-family: 'Bazzi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 .myfont4{font-family: 'Bazzi';}
