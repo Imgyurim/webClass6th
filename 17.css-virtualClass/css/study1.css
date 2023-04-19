@@ -1,0 +1,14 @@
+*{margin:0;padding:0;}
+
+.parent{
+    width:700px;
+    background:pink;
+}
+.a{
+    width:200px;
+    height:200px;
+}
+.b{
+    width:200px;
+    height: 200px;
+}
