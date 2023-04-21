@@ -61,7 +61,7 @@ body{
     padding:5px;
     float: left;
     /* border: 1px solid blue; */
-    width: calc((100% - 40px) / 3);
+    width: flex-shrink
 }
 .country:after{
     content:"";
