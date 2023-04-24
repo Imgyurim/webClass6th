@@ -1,0 +1,66 @@
+    *{margin: 0;padding: 0;}
+    h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: normal;}
+    address,em,i{font-style: normal;}
+    strong,b{font-weight: normal;}
+    a{text-decoration: none; color: inherit;}
+    ul{list-style: none;}
+
+#all{
+    /* border:1px solid black; */
+    width:920px;
+    margin:0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+}
+
+header>nav>.lnb{
+    /* border:1px solid red; */
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+}
+header>nav>.lnb>li{
+}
+
+header>nav>.gnb{
+    /* border:1px solid red; */
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    font-size: 16px;
+}
+.gnb>li{
+    margin-left: 50px;
+    font-weight: bold;
+} 
+.gnb>li:last-of-type{margin-right:0;}
+figure{
+    margin-bottom:50px;
+}
+main>.content{
+    display:flex;
+    flex-grow: 1;
+}
+.content>section>*{
+    display:flex;
+    /* border:1px solid orange; */
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.content>.f>h2{
+    
+}
+.content>s>.a{
+    justify-content:space-between;
+    margin-right:50px;
+}
+.content>.t{
+    /* border:1px solid green; */
+    align-items:center;
+    flex:1;
+}
+footer{
+    background:gray;
+    justify-content:center;
+    flex-wrap:wrap;
+}
