@@ -27,7 +27,7 @@ footer{
     background:#2a377e;
 }
 .all{
-    background:url(../새\ 폴더/bg_body.jpg) no-repeat 50% 50%;
+    background:url(../img/bg_body.jpg) no-repeat 50% 50%;
     /* object-fit: cover; */
     background-size:cover;
 }
@@ -40,7 +40,7 @@ header{
     justify-content:space-between;
 }
 header .logo>h1{
-    border:1px solid red;
+
     display: flex;
     padding-top:20px;
 }
