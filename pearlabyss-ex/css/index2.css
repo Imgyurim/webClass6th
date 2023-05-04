@@ -134,7 +134,7 @@ header:hover .logoArea a{
 main{
     /* border:10px solid blue; */
     position:relative;
-    border-bottom:1px solid gray;
+    border-bottom:1px solid #e0e0e0;
 }
 .videoBanner{
     height:780px;
@@ -225,44 +225,67 @@ main{
 .culture{
     width: 1440px;
     margin:0 auto;
+    /* border: 1px solid red; */
 }
-.culture ul img:hover{
-        transform:scale(1.2);
-        transition:all 0.5s ease 0s;
-        /* display: block; */
-
-    }
-.culture ul{
+.culture>ul{
     display: flex;
-    /* overflow: hidden; */
-    /* position:relative; */
 }
-.culture ul>li{
+.culture>ul>li{
     overflow: hidden;
 }
-.culture a{
-    position:relative;
+.culture>ul>li>a{
+    position: relative;
 }
-.culture>ul>li h4{
-    position:absolute;
-    left:50%;top:50%;
-    transform:translate(-50%,-350%);
-    font-size: 1.8rem;
-    color:#fff;
-    font-weight: bold;
+.culture>ul>li>a img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1)brightness(0.7);
+    object-fit: cover;
+    transition: all 0.5s ease 0s;
 }
-.culture>ul>li p{
+.culture>ul>li>a:hover img{
+    filter: grayscale(0)brightness(1);
+    transform: scale(1.2);
+}
+.box{
+    /* border:1px solid red; */
+    color: #fff;
     position:absolute;
-    transform: translate(-50%,-50%);
     left:50%;
-    bottom:37px;
-    white-space: nowrap;
-    color:#fff;
-    font-size: 1.2rem;
-    /* display: none; */
+    bottom:50%;
+    transform: translate(-50%);
+    text-align: center;
 }
-.culture:after{
-    position:absolute
+.box>h4{
+    font-size:1.8rem;
+    font-weight: bold;
+    margin-bottom:20px;
+    transition: all 0.5s ease 0s;
+}
+.culture>ul>li>a:hover h4{
+    transform: translateY(-30px); 
+ }
+ .box>p{
+    font-size: 1.3rem;
+    position: relative;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 40px;
+    white-space: nowrap;
+ }
+ .culture>ul>li>a:hover p{
+    opacity: 1;
+}
+.box>p:after{
+    content: "";
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:0;
+    width: 30px;
+    height:1px;
+    background: #fff;;
+    margin-top:-25px;
 }
 .notice{
     width:1440px;
@@ -281,10 +304,10 @@ main{
 .notice ul img{
     width: 100%;
     object-fit: cover;
+    transition:all 0.5s ease 0s;
 }
 .notice ul img:hover{
     transform:scale(1.1);
-    transition:all 0.5s ease 0s;
 }
 .notice ul p{
     margin-top:24px;
@@ -296,31 +319,43 @@ main{
     font-size: 1.4rem;
     font-weight: bold;
 }
- footer{
-    width: 1200px;
-    margin:0 auto;
+footer{border-bottom: 1px solid #e0e0e0;}
+.footMenu1{
+    width:1000px;
+    margin: 0 auto;
 }
-
 .footMenu1>ul{
-    border: 1px solid red;
     display: flex;
+    justify-content:space-between;
+    padding-top:70px;
+    padding-bottom:60px;
 }
-.footMenu1>ul>li{
-    border:2px solid red;
-
+.footMenu1>ul>li>a{
+    /* border:2px solid yellow; */
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 .footMenu1>ul>li>ul{
-    border:lpx solid lime;
+    padding-top:20px;
+    /* border:lpx solid blue; */
     display: flex;
-    padding-top:60px;
+    flex-direction: column;
 }
 .footMenu1>ul>li>ul>li{
-    border:1px solid red;
-    padding-bottom:60px;
+    /* border:1px solid red; */
+    font-size: 1rem;
+    color:gray;
+    padding-bottom: 15px;
+}
+.footMenu2{
+    width: 1000px;
+    margin:0 auto;
 }
 .footMenu2>ul{
     /* border: 1px solid red; */
     display: flex;
+    justify-content:center;
+
 }
 .footMenu2>ul>li{
     /* border:2px solid red; */
@@ -328,24 +363,56 @@ main{
     font-size: 1.2rem;
     font-weight: bold;
     padding-bottom:80px;
+    white-space: nowrap;
 }
 .blue{
     color:#3754cd;
-}
-.bottom{
-    border-top:1px solid gray;
 }
 .coInfo{
     width:1440px;
     margin:0 auto;
 }
-.snsMenu{border:1px solid red;}
+.footLogo{
+    margin:32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footLogo>h1{
+    width: 140px;
+    height: 30px;
+    padding-right:36px;
+
+}
+.footLogo>h1 img{
+    width: 100%;
+    height: 100%;
+}
+.footLogo>p{
+    color:#6a6a6a;
+}
+.snsMenu{
+    /* border:1px solid red; */
+}
 .snsMenu>ul{
-    border:1px solid red;
+    /* border:1px solid red; */
     display: flex;
     justify-content: flex-end;
 }
 .snsMenu>ul>li{
-    border:1px solid red;
-    padding-right:12px;
+    /* border:1px solid red; */
+    margin-left:15px;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    border-radius: 50%;
+}
+.snsMenu>ul>li:nth-of-type(1){
+    background:url(../img/icn_footer_facebook_round.svg) no-repeat 50% 50%;
+}
+.snsMenu>ul>li:nth-of-type(2){
+    background:url(../img/icn_footer_youtube_round.svg) no-repeat 50% 50%;
+}
+.snsMenu>ul>li:nth-of-type(3){
+    background:url(../img/icn_footer_linkedin_round.svg) no-repeat 50% 50%;
 }
