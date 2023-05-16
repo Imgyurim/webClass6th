@@ -193,6 +193,7 @@ main{
 }
 .news>ul>li{
     position:relative;
+
 }
 .news>ul>li:after{
     content: "";
