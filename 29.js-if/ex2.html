@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>비만도예제</title>
     <link rel="stylesheet" href="./css/ex1.css">
+    <script src="./js/bmi.js"></script>
 </head>
 <body>
     <h1>퀴즈</h1>
@@ -22,25 +23,9 @@
         완성예시) 당신의 키는 170센티미터이고 몸무게는 70kg입니다 bmi수치는 24.2이며 과체중입니다.
     </pre>
     <script>
-         let height = Number(prompt("키를 입력하세요"))
-         let weight = Number(prompt("몸무게를 입력하세오"))
-         let bmi = Math.round(weight/(height/100*height/100))
-        let bmiResult = bmi>=25 ? "비만" :
-                        bmi>=23 && bmi<=24.9 ? "과체중" :
-                        bmi>=18.5 && bmi<=22.9 ? "정상" : "저체중"
-
-
-        if(bmi>=25){
-            bmiResult=("비만")
-        }else if(bmi >= 23 && bmi <= 24.9){
-            bmiResult=("과체중")
-        }else if(bmi >= 18.5 && bmi < 22.9){
-            bmiResult=("정상")
-        }else{
-            bmiResult=("저체중")
-        }
-
-        document.write(`[당신의 키는 ${height}cm이고 몸무게는 ${weight}kg입니다 bmi수치는 ${bmi}이며 ${bmiResult}입니다.]`)
+        showResult("정현진",180,40,getBMI(180,40),getBMI_result(getBMI(180,40)))
+        showResult("정민진",170,20,getBMI(170,20),getBMI_result(getBMI(170,20)))
+        showResult("김시홍",169,73,getBMI(169,73),getBMI_result(getBMI(169,73)))
     </script>
 </body>
 </html>
