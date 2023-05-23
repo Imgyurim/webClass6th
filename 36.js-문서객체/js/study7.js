@@ -11,7 +11,7 @@ window.onload = function(){
     // })
     for(let i=0 ; i<dtList.length ; i++){
         dtList[i].addEventListener("click",function(){
-            for(let j=0 ; j<3 ; j++){
+            for(let j=0 ; j<dtList.length ; j++){
                 dtList[j].classList.remove("on")
             }
             this.classList.add("on")

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
 </head>
 <body>
     <div class="container">
@@ -44,7 +45,7 @@
         </header>
         <main>
   W          <div class="banner">
-                <ul>
+                <ul class="train">
                     <li>
                         <img src="./img/b1.jpg" alt="">
                         <section class="box">
@@ -68,14 +69,14 @@
                     </li>
                 </ul>
                 <section class="controler">
-                    <a href="#">prev</a>
-                    <a href="#">next</a>
+                    <a href="#" class="btnPrev">prev</a>
+                    <a href="#" class="btnNext">next</a>
                 </section>
-                <ul class="pageNation">
+                <!-- <ul class="pageNation">
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
-                </ul>
+                </ul> -->
             </div>
                 <section>
                     <ul>
@@ -90,10 +91,10 @@
                             <p>를 블랜딩하여 더욱 풍부한 향을 담아 단순한 저가형 커피가 아닌 정성을 가득 담아 홍콩의 풍미를 선사하고자 합니다.</p>
                         <a href="#">자세히보기</a>
                     </ul>
-                    <ul class="pageNation">
+                    <!-- <ul class="pageNation">
                         <li>1</li>
                         <li>2</li>
-                    </ul>
+                    </ul> -->
                 </section>
             <div>
             <div>
@@ -293,48 +294,50 @@
                 <p>우리동네 작은 홍콩, 홍콩다방에서 홍콩의 맛과 멋을 즐겨보세요!</p>
             </div>
             <div class="sns">
-                <section>
-                    <h2>SNS<br>
-                    FOLLOW US</h2>
-                    <p>@hongkongdabang_korea</p>
-                </section>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="./img/sns/327629240_552929477014940_4091120554768506505_n.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/sns/341563900_207592191980423_799109773936828567_n.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/sns/341730963_766830545122306_6729511250484152537_n.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/sns/341829608_3432639526983268_1035547557024554268_n.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/sns/345563390_1279723706279158_2006116127110566639_n.jpg" alt="">
-                        </a>
-                    </li>
+                <div class="snsList">
+                    <section>
+                        <h2>SNS<br>
+                        FOLLOW US</h2>
+                        <p>@hongkongdabang_korea</p>
+                    </section>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./img/sns/343585090_917794666187529_7242448515527985643_n.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/sns/344351748_249145350855876_4522846397458090990_n.jpg" alt="인스타그램 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/sns/344584502_203516959141270_7080310101911001323_n.jpg" alt="인스타그램 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/sns/345563390_1279723706279158_2006116127110566639_n.jpg" alt="인스타그램 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/sns/345566213_761514352178668_4049237499824014827_n.jpg" alt="인스타그램 이미지">
+                            </a>
+                        </li>
+                </div>
             </div>
         </main>
         <footer>
-            <div>
+            <div class="footerLogo">
                 <h1>
                     <a href="#">
-                        <img src="./img/footerLogo.png" alt="홍콩다방 로고">
+                        <img src="./img/headerLogo.png" alt="홍콩다방 로고">
                     </a>
                 </h1>
             </div>
-            <div>
+            <div class="footerInfo">
                 <p>주식회사 홍콩다방코리아 ｜ 대표자 : 김원화 ｜ 법인등록번호: 110111-7702817 ｜
                 </p>
                 <p>사업자등록번호 : 889-87-02061 ｜ 문의번호 : 1811-9657
@@ -342,11 +345,16 @@
                 <p>이메일 주소 : contact@hkdabang.com｜ 주소 : 서울특별시 영등포구 당산로41길 11, 제7층 제이703호 (당산동4가, 당산 SK V1 center)
                 </p>
             </div>
-            <div>
-                <a href="#">
-                    <img src="" alt="">
-                </a>
+            <div class="footerSns">
+                <ul>
+                    <li><a href="#"><img src="./img/youtube-line (1).svg" alt="youtube"></a></li>
+                    <li><a href="#"><img src="./img/instagram-line.svg" alt="instagram"></a></li>
+                    <li><a href="#"><img src="./img/facebook-line.svg" alt="facebook"></a></li>
+                </ul>
             </div>
+            <span class="footerTop">
+                <a href="#"><img src="./img/arrow-up-line.svg" alt="top"></a>
+            </span>
         </footer>
     </div>
 </body>
