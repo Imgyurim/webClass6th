@@ -1,0 +1,18 @@
+*{margin:0;padding:0;}
+ul{list-style: none;}
+
+.swiper{
+    width:700px;
+    height:400px;
+    border:1px solid red;
+
+}
+.swiper-slide{
+    position: relative;
+    left: 0; top: 0;
+}
+.slideTxt{
+    position:absolute;
+    z-index: 10000;
+     left: 0; top: 0;
+}
