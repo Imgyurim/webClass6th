@@ -1,26 +1,30 @@
 window.onload = function(){
 
-    let nextBtn = document.querySelector(".btnNext")
-    let prevBtn = document.querySelector(".btnPrev")
-    let  train= document.querySelector(".train")
-    let count = 0
+    let station1 = new Swiper(".station1",{
+     loop:true,
+     direction:"horizontal",
+     pagination: {
+         el: '.swiper-pagination',
+         type: 'bullets', 
+         clickable:true
+       },
+       navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+       autoplay:true,
+       speed:10
+    });
 
-    nextBtn.addEventListener("click",function(){
-        // train클래스를 선택해서 왼쪽으로 500픽셀이동
-        count++
-        if(count>3){count=0}
-      train.style.transform = "translateX(-"+500*count+"px)"
-        })
-    prevBtn.addEventListener("click",function(){
-        count--
-        if(count<0){count=3}
-        train.style.transform = "translateX(-"+500*count+"px)"
-        })
+  let station2 = new Swiper(".station2",{
+    loop:true,
+    direction:"horizontal",
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets', 
+        clickable:true
+      },
 
-}
-/* Demo purposes only */
-$(".hover").mouseleave(
-  function() {
-    $(this).removeClass("hover");
+  })
+
   }
-);

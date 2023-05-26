@@ -7,11 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/main.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="innerHeader back">
+            <div class="innerHeader">
                 <div class="headerLogo">
                         <h1>
                             <a href="#">
@@ -19,9 +25,9 @@
                             </a>
                         </h1>
                 </div>
-                <nav class="row columns">
-                    <ul class="menu align-center expanded text-center SMN_effect-3">
-                        <li class="MHover"><a href="#">홍콩다방</a></li>
+                <nav>
+                    <ul>
+                        <li><a href="#">홍콩다방</a></li>
                         <li><a href="#">메뉴</a>
                             <ul>
                                 <li><a href="#">시그니쳐 드링크</a></li>
@@ -44,161 +50,95 @@
             </div>
         </header>
         <main>
-  W          <div class="banner">
-                <ul class="train">
-                    <li>
-                        <img src="./img/b1.jpg" alt="">
-                        <section class="box">
+            <div class="station1 swiper">
+                <ul class="train swiper-wrapper">
+                    <li class="swiper-slide">
+                        <img src="./img/b1.jpg" alt="bannerImg1">
+                        <div class="slideTxt">
                             <p>중독되는 오리지널 홍콩의 맛!</p>
                             <h2>홍콩다방</h2>
-                        </section>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./img/b2.jpg" alt="">
-                        <section class="box">
+                    <li class="swiper-slide">
+                        <img src="./img/6cab40214468f.jpg" alt="bannerImg2">
+                        <div class="slideTxt">
                             <p>중독되는 오리지널 홍콩의 맛!</p>
                             <h2>홍콩다방</h2>
-                        </section>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./img/b3.jpg" alt="">
-                        <section class="box">
+                    <li class="swiper-slide">
+                        <img src="./img/b3.jpg" alt="bannerImg3">
+                        <div class="slideTxt">
                             <p>중독되는 오리지널 홍콩의 맛!</p>
                             <h2>홍콩다방</h2>
-                        </section>
+                        </div>
                     </li>
                 </ul>
-                <section class="controler">
-                    <a href="#" class="btnPrev">prev</a>
-                    <a href="#" class="btnNext">next</a>
-                </section>
-                <!-- <ul class="pageNation">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul> -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
             </div>
-                <section>
-                    <ul>
-                        <li>
-                            <img src="./img/c.png" alt="컵">
+            <div class="station2 swiper">
+                <ul class="train swiper-wrapper">
+                    <li class="swiper-slide">
+                        <img src="./img/c.png" alt="컵">
+                        <div class="slideTxt">
                             <h2>매일 20가지 찻잎</h2>
-                            <p>을 직접 우려낸 차와 홍콩에서 직수입한 우유를 홍콩 전통방식으로 제조한 정통 밀크티를 고객들에게 제공합니다.</p>
+                            <p>을 직접 우려낸 차와 홍콩에서 직수입한 우유를 
+                                <br>홍콩 전통방식으로 제조한 정통 밀크티를 고객들에게 제공합니다.</p>
                             <a href="#">자세히보기</a>
-                        </li>
-                            <img src="./img/원두.png" alt="원두">
-                            <h2>브라질,에티오피아,과테말라 등 4가지 원두</h2>
-                            <p>를 블랜딩하여 더욱 풍부한 향을 담아 단순한 저가형 커피가 아닌 정성을 가득 담아 홍콩의 풍미를 선사하고자 합니다.</p>
-                        <a href="#">자세히보기</a>
-                    </ul>
-                    <!-- <ul class="pageNation">
-                        <li>1</li>
-                        <li>2</li>
-                    </ul> -->
-                </section>
-            <div>
-            <div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./img/원두.png" alt="원두">
+                        <div class="slideTxt">
+                            <h2>브라질,에티오피아,과테말라 등
+                                <br> 4가지 원두</h2>
+                            <p>를 블랜딩하여 더욱 풍부한 향을 담아 단순한 저가형 커피가 아닌
+                                <br>정성을 가득 담아 홍콩의 풍미를 선사하고자 합니다.</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="tabMenu">
                 <section>
                     <h2>MENU</h2>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="" alt="SIGNATURE">
-                                <p>SIGNATURE</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="" alt="BEVERAGE">
-                                <p>BEVERAGE</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="" alt="COFFEE">
-                                <p>COFFEE</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="" alt="BAKERY">
-                                <p>BAKERY</p>
-                            </a>
-                        </li>
+                    <ul class="tabTip">
+                        <li  class="on"><a href="#">SIGNATURE</a></li>
+                        <li><a href="#">BEVERAGE</a></li>
+                        <li><a href="#">COFFEE</a></li>
+                        <li><a href="#">BAKERY</a></li>
                     </ul>
                 </section>
                 <section>
-                    <ul>
-                        <li>
-                            <h3>SIGNATURE</h3>
-                            </p>
-                        </li>
-                    </ul>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
+                    <div class="sig">
+                        <h3>SIGNATURE</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ea placeat aliquid porro, perspiciatis consectetur quis quaerat reiciendis tenetur quibusdam iste natus nemo a repellendus delectus aut quisquam magni veritatis!</p>
+                        <div class="station_sig">
+                            <ul class="train_sig">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
                         <h4>토핑류</h4>
                         <ul>
-                            <li>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </li>
+                            
                         </ul>
                     </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </section>
+                
+                
             </div>
-            <div>
+
+            <div class="">
                 <section>
                     <h2>NEWS&<br>
                     EVENTS</h2>
@@ -218,6 +158,8 @@
                         <h4>어플 다운 받고 원플원 쿠폰받자!</h4>
                     </li>
                 </ul>
+            </div>
+            <div class="">
                 <ul>
                     <li>
                         <a href="#">
@@ -269,7 +211,7 @@
                         </a>
                     </li>
                 </ul>
-                <section class="controler">
+                <section class="">
                     <a href="#">prev</a>
                     <a href="#">next</a>
                 </section>
@@ -286,12 +228,14 @@
                     <li>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/eCmSqVK5FCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </li>
+                    <li>
+                        <a href="#">
+                            <p>영상보러가기</p>
+                            <span></span>
+                        </a>
+                    </li>
                 </ul>
-                <a href="#">
-                    <p>영상보러가기</p>
-                    <img src="" alt="">
-                </a>
-                <p>우리동네 작은 홍콩, 홍콩다방에서 홍콩의 맛과 멋을 즐겨보세요!</p>
+                <span class="slide">우리동네 작은 홍콩, 홍콩다방에서 홍콩의 맛과 멋을 즐겨보세요!</span >
             </div>
             <div class="sns">
                 <div class="snsList">
@@ -303,30 +247,30 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <img src="./img/sns/343585090_917794666187529_7242448515527985643_n.jpg" alt="">
+                                <img src="./img/sns/327629240_552929477014940_4091120554768506505_n.jpg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./img/sns/344351748_249145350855876_4522846397458090990_n.jpg" alt="인스타그램 이미지">
+                                <img src="./img/sns/341563900_207592191980423_799109773936828567_n.jpg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./img/sns/344584502_203516959141270_7080310101911001323_n.jpg" alt="인스타그램 이미지">
+                                <img src="./img/sns/341730963_766830545122306_6729511250484152537_n.jpg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./img/sns/345563390_1279723706279158_2006116127110566639_n.jpg" alt="인스타그램 이미지">
+                                <img src="./img/sns/341829608_3432639526983268_1035547557024554268_n.jpg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./img/sns/345566213_761514352178668_4049237499824014827_n.jpg" alt="인스타그램 이미지">
+                                <img src="./img/sns/345563390_1279723706279158_2006116127110566639_n.jpg" alt="">
                             </a>
                         </li>
-                </div>
+                </div>  
             </div>
         </main>
         <footer>
