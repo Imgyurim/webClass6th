@@ -232,22 +232,17 @@ main{position:relative;}
 
 /* culture */
 .culture{
-   border:1px solid red;
-   width:1440px;
-   margin:0 auto;
+   width:100%;
    margin-bottom:160px;
 }
 .culture>ul{
-   border:1px solid blue;
-   height:574px;
-   display:flex;
 }
 .culture>ul>li{
-   border:1px solid lime;
-   flex:1;
    position:relative;
    overflow: hidden;
    /* width:20%; */
+   height: 230px;
+   margin-bottom: 1px;
 }
 .culture>ul>li>a{
    display: block;
@@ -257,17 +252,12 @@ main{position:relative;}
    width:100%;
    height:100%;
    object-fit: cover;
-   transition:all 0.5s ease 0s;
-   filter:grayscale(1);
-}
-.culture>ul>li:hover>a>img{
-   filter: grayscale(0);
-   transform:scale(1.3);
 }
 .floatingBox{
+   border:1px solid lime;
    position:absolute;
-   left:50%;bottom:60px;
-   transform:translateX(-50%);
+   left:50%;top:50%;
+   transform:translateX(-50%)translateY(-50%);
    text-align: center;
    color:#fff;
 }
@@ -276,20 +266,10 @@ main{position:relative;}
    font-weight: bold;
    margin-bottom:18px;
    border:1px solid red;
-   transform:translateY(20px);
-   transition:all 0.5s ease 0s;
-}
-.culture>ul>li:hover .floatingBox h4{
-   transform:translateY(0);
 }
 .floatingBox>p{
    padding-top:30px;
    position:relative;
-   opacity: 0;
-   transition:all 0.5s ease 0s;
-}
-.culture>ul>li:hover .floatingBox>p{
-   opacity: 1;
 }
 .floatingBox>p:after{
    content:"";
@@ -301,40 +281,35 @@ main{position:relative;}
    height:1px;
    background:#fff;
 }
-.notice{
-   border:1px solid red;
-   width:1440px;
+
+.notice_station{
+   width:100%;
    margin:0 auto;
 }
-.notice>ul{
+.notice_station ul{
    display:flex;
-   justify-content: space-between;
 }
-.notice>ul>li{
-   width:calc((100% - 60px)/4);
-   border:1px solid red;
-}
-.notice li figure{
-   height:190px;
-   border:1px solid orange;
-   overflow: hidden;
-}
-.notice li figure img{
-   width:100%;
-   height:100%;
-   object-fit: cover;
-   transition:all 0.5s ease 0s;
-}
-.notice li:hover figure img{
-   transform:scale(1.2);
-}
-.notice li p{
-   font-size:12px;
-   margin:20px 0;
-}
-.notice li h4{
+.notice_station ul>li h4{
    font-size:15px;
    font-weight: bold;
+   margin: 30px 0;
+}
+.notice_station li figure{
+   height:300px;
+   overflow: hidden;
+}
+.notice_station li figure img{
+   width:100%;
+   height:100%;
+   object-fit: contain;
+}
+.notice_station li p{
+   font-size:12px;
+}
+.notice_station .swiper-pagination{
+    position:relative;
+    border: 1px solid red;
+    margin-top:50px;
 }
 
 footer{margin-top:200px;}
