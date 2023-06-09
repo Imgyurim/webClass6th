@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>main</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="./js/main.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="main_p">
         <header>
             <div class="innerHeader">
                 <div class="headerLogo">
@@ -28,7 +28,7 @@
                 <nav>
                     <ul>
                         <li><a href="#">홍콩다방</a></li>
-                        <li><a href="#">메뉴</a>
+                        <li><a href="./sub1.html">메뉴</a>
                             <ul>
                                 <li><a href="#">시그니쳐</a></li>
                                 <li><a href="#">베이커리</a></li>
@@ -61,14 +61,14 @@
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <img src="./img/6cab40214468f.jpg" alt="bannerImg2">
+                        <img src="./img/b2.jpg" alt="bannerImg2">
                         <div class="slideTxt">
                             <p>중독되는 오리지널 홍콩의 맛!</p>
                             <h2>홍콩다방</h2>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <img src="./img/4cc7671704971.jpg" alt="bannerImg3">
+                        <img src="./img/b3.jpg" alt="bannerImg3">
                         <div class="slideTxt">
                             <p>중독되는 오리지널 홍콩의 맛!</p>
                             <h2>홍콩다방</h2>
@@ -78,6 +78,7 @@
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+
             </div>
             <div class="station2 swiper">
                 <ul class="train swiper-wrapper">
@@ -103,7 +104,7 @@
                 </ul>
                 <div class="swiper-pagination"></div>
             </div>
-            <div class="content">
+            <div class="MenuTab">
                 <section class="tabMenu">
                     <h2>MENU</h2>
                     <ul class="tabTip">
@@ -112,61 +113,68 @@
                         <li><a href="#">COFFEE</a></li>
                         <li><a href="#">ADE</a></li>
                         <li><a href="#">두배우유</a></li>
-                        <li><a href="#">콜라보메뉴</a></li>
+                        <li><a href="#">콜라보 메뉴</a></li>
                     </ul>
                 </section>
-                <section  class="tabDes">
-                    <div class="sig">
+                <section class="tabMenu">
+                    <div class="sig on">
                         <h3>SIGNATURE</h3>
                         <p>한 번도 안먹어본 사람은 있어도 
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! !</p>
                         <div class="station_sig">
                             <ul class="train_sig">
-                                <li><img src="./img/9e1fbe15f30d2__1_-removebg-preview.png" alt="까이딴자이"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li><img src="./img/eggWaffle.png" alt="eggWaffle"></li>
+                                <li><img src="./img/milkTea.png" alt="milkTea"></li>
+                                <li><img src="./img/MilkteaCoffee.png" alt="MilkteaCoffee"></li>
+                                <li><img src="./img/lemonIcedTea.png" alt="Lemon iced tea"></li>
                             </ul>
                         </div>
                         <h4>토핑류</h4>
+                        <!-- 까이딴자이-->
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><img src="./img/corn (1).png" alt="옥수수"></li>
+                            <li><img src="./img/cho.png" alt="초코"></li>
+                            <li><img src="./img/cho.png" alt="고구마"></li>
+                            <li><img src="./img/cho.png" alt="치즈"></li>
+                            <li><img src="./img/cho.png" alt="카라멜빈"></li>
+                            <li><img src="./img/cho.png" alt="오레오"></li>
+                            <li><img src="./img/cho.png" alt="로투스"></li>
+                            <li><img src="./img/whipped cream.png" alt="생크림"></li>
                         </ul>
                     </div>
-                    <div class="bak">
+                    <div class="bakery">
                         <h3>BAKERY</h3>
                         <p>한 번도 안먹어본 사람은 있어도 
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
-                        <div class="station_bak">
-                            <ul class="train_bak">
-                                <li><img src="" alt="까이딴자이"></li>
-                                <li><img src="" alt="랑퐁유엔"></li>
-                                <li><img src="" alt="홍콩타르트"></li>
+                        <div class="station_bakery">
+                            <ul class="train_bakery">
+                                <li><img src="./img/eggWaffle.png" alt="eggWaffle"></li>
+                                <li><img src="./img/lanFongYuen.png" alt="lanFongYuen"></li>
+                                <li><img src="./img/eggtart.png" alt="eggtart"></li>
                             </ul>
                         </div>
                         <h4>토핑류</h4>
                         <ul>
                             <li>
                                 <ul>
-                                    <li><img src="" alt="옥수수"></li>
-                                    <li><img src="" alt="초코"></li>
-                                    <li><img src="" alt="고구마"></li>
-                                    <li><img src="" alt="치즈"></li>
-                                    <li><img src="" alt="카라멜빈"></li>
-                                    <li><img src="" alt="오레오"></li>
-                                    <li><img src="" alt="로투스"></li>
-                                    <li><img src="" alt="생크림"></li>
+                                    <!-- 까이딴자이 -->
+                                    <li><img src="./img/corn (1).png" alt="옥수수"></li>
+                                    <li><img src="./img/cho.png" alt="초코"></li>
+                                    <li><img src="./img/cho.png" alt="고구마"></li>
+                                    <li><img src="./img/cho.png" alt="치즈"></li>
+                                    <li><img src="./img/cho.png" alt="카라멜빈"></li>
+                                    <li><img src="./img/cho.png" alt="오레오"></li>
+                                    <li><img src="./img/cho.png" alt="로투스"></li>
+                                    <li><img src="./img/whipped cream.png" alt="생크림"></li>
                                 </ul>
                             </li>
                             <li>
                                 <ul>
-                                    <li><img src="" alt="코코넛"></li>
-                                    <li><img src="" alt="콘치즈"></li>
-                                    <li><img src="" alt="명란"></li>
-                                    <li><img src="" alt="부추"></li>
+                                    <!-- 타르트 -->
+                                    <li><img src="./img/cho.png" alt="코코넛"></li>
+                                    <li><img src="./img/cho.png" alt="콘치즈"></li>
+                                    <li><img src="./img/cho.png" alt="명란"></li>
+                                    <li><img src="./img/cho.png" alt="부추"></li>
                                 </ul>
                             </li>
                         </ul>
@@ -177,29 +185,29 @@
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
                         <div class="station_ade">
                             <ul class="train_ade">
-                                <li><img src="./img/lemon.png" alt="후르츠펀치_레몬"></li>
-                                <li><img src="./" alt="후르츠펀치_망고"></li>
-                                <li><img src="" alt="후르츠펀치_샤인머스켓"></li>
-                                <li><img src="" alt="후르츠펀치_자몽"></li>
-                                <li><img src="" alt="후르츠펀치_패션후르츠"></li>
-                                <li><img src="" alt="블루베리_스무디"></li>
-                                <li><img src="" alt="블루베리요거트_스무디"></li>
-                                <li><img src="" alt="망고_스무디"></li>
-                                <li><img src="" alt="망고요거트_스무디"></li>
-                                <li><img src="" alt="초코칩_프라푸치노"></li>
-                                <li><img src="" alt="레드빈_홍콩행밀크티"></li>
-                                <li><img src="" alt="딸기바나나_스무디"></li>
-                                <li><img src="" alt="마일로_초코라떼"></li>
+                                <li><img src="./img/lemon.png" alt="Fruit Punch Lemon"></li>
+                                <li><img src="./img/mango.png" alt="Fruit Punch Mango"></li>
+                                <li><img src="./img/ShineMuscat-.png" alt="Fruit Punch ShineMuscat"></li>
+                                <li><img src="./img/grapefruit.png" alt="Fruit Punch grapefruit"></li>
+                                <li><img src="./img/passionfruit-.png" alt="후Fruit Punch passionfruit"></li>
+                                <li><img src="./img/Blueberry Smoothie.png" alt="Blueberry Smoothie"></li>
+                                <li><img src="./img/Blueberry Yogurt.png" alt="Blueberry Yogurt Smoothie"></li>
+                                <li><img src="./img/Mango Smoothie.png" alt="Mango Smoothie"></li>
+                                <li><img src="./img/Mango Yogurt Smoothie.png" alt="Mango Yogurt Smoothie"></li>
+                                <li><img src="./img/Chocolate Chip Frappuccino.png" alt="Chocolate Chip Frappuccino"></li>
+                                <li><img src="./img/Red Bean Milk Tea.png" alt="Red Bean Milk Tea"></li>
+                                <li><img src="./img/strawberryBananaSmoothie.png" alt="strawberry Banana Smoothie"></li>
+                                <li><img src="./img/Milo Chocolate Latte.png" alt="Milo Chocolate Latte"></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="cof">
+                    <div class="coffee">
                         <h3>COFFEE</h3>
                         <p>한 번도 안먹어본 사람은 있어도 
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
-                        <div class="station_cof">
-                            <ul class="train_cof">
-                                <li><img src="./img/fe1070a2bccf4-removebg-preview.png" alt="">아메리카노</li>
+                        <div class="station_coffee">
+                            <ul class="train_coffee">
+                                <li><img src="./img/americano.png" alt="americano"></li>
                                 <li><img src="./img/caffelatte.png" alt="카페라떼"></li>
                                 <li><img src="./img/vanillalatte.png" alt="바닐라라떼"></li>
                                 <li><img src="./img/Caramel Macchiato.png" alt="카라멜마끼야또"></li>
@@ -207,51 +215,57 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="dou">
+                    <div class="doubleMilk">
                         <h3>두배우유</h3>
                         <p>한 번도 안먹어본 사람은 있어도 
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
-                        <div class="station_dou">
-                            <ul class="train_dou">
-                                <li><img src="" alt="두배우유"></li>
-                                <li><img src="" alt="두배녹차우유"></li>
-                                <li><img src="" alt="두배쑥우유"></li>
-                                <li><img src="" alt="두배미숫가루우유"></li>
-                                <li><img src="" alt="두배망고우유"></li>
-                                <li><img src="" alt="두배딸기우유"></li>
+                        <div class="station_doubleMilk">
+                            <ul class="train_doubleMilk">
+                                <li><img src="./img/double Milk.png" alt="double Milk"></li>
+                                <li><img src="./img/double Green tea Milk.png" alt="double Green tea Milk"></li>
+                                <li><img src="./img/double Mugwort Milk.png" alt="double Mugwort"></li>
+                                <li><img src="./img/double MSGR Milk.png" alt="double MSGR Milk"></li>
+                                <li><img src="./img/double mango Milk.png" alt="double mango Milk"></li>
+                                <li><img src="./img/double Strawberry Milk.png" alt="double Strawberry Milk"></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col">
-                        <h3>두배우유</h3>
+                    <div class="collaboration">
+                        <h3>콜라보메뉴</h3>
                         <p>한 번도 안먹어본 사람은 있어도 
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
-                        <div class="station_col">
-                            <ul class="train_col">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                        <div class="station_collaboration">
+                            <ul class="train_collaboration">
+                                <!-- 하겐다즈-->
+                                <li><img src="./img/vanillaSingle.png" alt="vanillaSingle"></li>
+                                <li><img src="./img/Belgian chocolate Single.png" alt="Belgian chocolate Single"></li>
+                                <li><img src="./img/Strawberry Single.png" alt="Strawberry Single"></li>
+                                <li><img src="./img/double.png" alt="double"></li>
+                                <li><img src="./img/triple.png" alt="triple"></li>
+                                <!-- 하겐다즈-->
+                                <li><img src="red bean.png" alt="red bean"></li>
+                                <li><img src="Affogatoto.png" alt="Affogatoto"></li>
+                                <li><img src="atp.png" alt="all things prosperous(mango)"></li>
+                                <li><img src="summerStrawberry.png" alt="summerStrawberry"></li>
+                                <!-- 마일로-->
+                                <li><img src="./img/MiloEggWaffle.png" alt="MiloEggWaffle"></li>
+                                <li><img src="./img/MiloLanfongyuen.png" alt="MiloLanfongyuen"></li>
+                                <!-- 로투스-->
+                                <li><img src="./img/MiloEggWaffle.png" alt="LotusEggwaffle"></li>
+                                <li><img src="./img/LotusLanfongyuen.png" alt="LotusLanfongyuen"></li>
                             </ul>
                         </div>
-                        <h4>토핑류</h4>
-                        <ul>
-                            <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                        </ul>
                     </div>
                 </section>
             </div>
 
-            <div class="">
-                <section>
+            <div class="NewsE">
+                <section class="NewsE_L">
                     <h2>NEWS&<br>
                     EVENTS</h2>
                     <P>hongkongdabang</P>
                 </section>
-                <ul>
+                <ul class="NewsE_R">
                     <li>
                         <p>EVENT</p>
                         <h4>방구석 홍콩여행?!</h4>
@@ -266,61 +280,64 @@
                     </li>
                 </ul>
             </div>
-            <div class="">
-                <ul>
+            <div class="content">
+                <section class="content_L">
+                    <ul>
+                        <li>
+                            <p>SWEET HONGKONG</p>
+                            <h2>CAFE</h2>
+                            <ul>
+                                <li><img src="./img/eggWaffle.png" alt="eggWaffle"></li>
+                                <li><img src="./img/cheese.png" alt="cheese"></li>
+                                <li><img src="./img/corn.png" alt="corn.png"></li>
+                                <li><img src="./img/peanut.png" alt="peanut"></li>
+                                <li><img src="./img/sweet potato.png" alt="sweet potato"></li>
+                                <li><img src="./img/chocolate.png" alt="chocolate"></li>
+                            </ul>
+                        </li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                    </ul>
+                </section>
+                <ul class="content_R">
                     <li>
-                        <a href="#">
-                            <img src="" alt="">
-                            <h3>Point 01.</h3>
-                            <p><span>일매출 100만원!</span>
-                            확실한 컨셉과 차별화된 아이템</p>
-                        </a>
+                        <h3>Point 01.</h3>
+                        <p><span>일매출 100만원!</span>
+                        확실한 컨셉과 차별화된 아이템</p>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="" alt="">
-                            <h3>Point 02.</h3>
-                            <p>직영 공장 운영으로
-                            가맹 점주 <span>마진 극대화</span>
-                            <b>및 쉬운 조리 공정</b></p>
-                        </a>
+                        <h3>Point 02.</h3>
+                        <p>직영 공장 운영으로
+                        가맹 점주 <span>마진 극대화</span>
+                        <b>및 쉬운 조리 공정</b></p>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="" alt="">
-                            <h3>Point 03.</h3>
-                            <p><span>인건비 절감!</span>
-                            1.5인 운영 시스템</p>
-                        </a>
+                        <h3>Point 03.</h3>
+                        <p><span>인건비 절감!</span>
+                        1.5인 운영 시스템</p>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="" alt="">
-                            <h3>Point 04.</h3>
-                            <p><span>SNS 감성</span>에 맞는
-                            패키지와 인테리어 디자인</p>
-                        </a>
+                        <h3>Point 04.</h3>
+                        <p><span>SNS 감성</span>에 맞는
+                        패키지와 인테리어 디자인</p>/a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="" alt="">
-                            <h3>Point 05.</h3>
-                            <p>입소문으로 퍼지는
-                            <span>홍콩다방의 마케팅</span></p>
-                        </a>
+                        <h3>Point 05.</h3>
+                        <p>입소문으로 퍼지는
+                        <span>홍콩다방의 마케팅</span></p>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="" alt="">
-                            <h3>Point 06.</h3>
-                            <p><span>부담없는 창업비용</span>과
-                            다양한 상권에</p>
-                        </a>
+                        <h3>Point 06.</h3>
+                        <p><span>부담없는 창업비용</span>과
+                        다양한 상권에</p>
                     </li>
                 </ul>
                 <section class="">
                     <a href="#">prev</a>
-                    <a href="#">next</a>
+                    <a href="#">next</a>                                                                                                          .1tui
                 </section>
             </div>
             <div class="video">
@@ -344,42 +361,77 @@
                 </ul>
                 <span class="slide">우리동네 작은 홍콩, 홍콩다방에서 홍콩의 맛과 멋을 즐겨보세요!</span >
             </div>
-            <div class="sns">
+            <div class="sns station4 swiper">
                 <div class="snsList">
                     <section>
                         <h2>SNS<br>
                         FOLLOW US</h2>
                         <p>@hongkongdabang_korea</p>
                     </section>
-                    <ul>
-                        <li>
+                    <ul class="train swiper-wrapper">
+                        <li class="swiper-slide">
                             <a href="#">
-                                <img src="./img/sns/327629240_552929477014940_4091120554768506505_n.jpg" alt="">
+                                <img src="./img/sns/9712ee070f2c3.png" alt="snsImg">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/sns/327629240_552929477014940_4091120554768506505_n.jpg" alt="snsImg">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/sns/341563900_207592191980423_799109773936828567_n.jpg" alt="snsImg">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/sns/341730963_766830545122306_6729511250484152537_n.jpg" alt="snsImg">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/sns/341829608_3432639526983268_1035547557024554268_n.jpg" alt="snsImg">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/sns/345563390_1279723706279158_2006116127110566639_n.jpg" alt="snsImg">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./img/sns/341563900_207592191980423_799109773936828567_n.jpg" alt="">
+                                <img src="./img/sns/341946426_3471327906477581_8910662118440990001_n.jpg" alt="snsImg">
+                            </a>
+                        </li>
+                        <li class="swiper-slide"> 
+                            <a href="#">
+                                <img src="./img/sns/342568580_956105012489831_6643868771216230120_n.jpg" alt="snsImg">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/sns/342944370_3431084943826335_4671017653617226734_n.jpg" alt="snsImg">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/sns/343047143_2205597842957483_4586012142940878309_n.jpg" alt="snsImg">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./img/sns/341730963_766830545122306_6729511250484152537_n.jpg" alt="">
+                                <img src="./img/sns/343283103_559542602972686_7766205715438173818_n.jpg" alt="snsImg">
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <a href="#">
-                                <img src="./img/sns/341829608_3432639526983268_1035547557024554268_n.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./img/sns/345563390_1279723706279158_2006116127110566639_n.jpg" alt="">
+                                <img src="./img/sns/343585090_917794666187529_7242448515527985643_n.jpg" alt="snsImg">
                             </a>
                         </li>
                 </div>  
             </div>
-        </main>
+        </mainp>
         <footer>
             <div class="footerLogo">
                 <h1>

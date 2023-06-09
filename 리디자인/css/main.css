@@ -9,20 +9,28 @@ img{
     max-width:100%;
     /* 선택한 태그의 너비의 최대값을 지정 */
 }
-
+@font-face {
+    font-family: "vitro";
+    src: url(../font/VITRO\ INSPIRE\ TTF.ttf) format("truetype");
+    font-weight: lighter;
+}
 @font-face {
     font-family: "vitro";
     src: url(../font/VITRO\ PRIDE\ TTF.ttf) format("truetype");
     font-weight: normal;
 }
+@font-face {
+    font-family: "vitro";
+    src: url(../font/VITRO\ CORE\ TTF.ttf) format("truetype");
+    font-weight: bold;
+}
 html{
     font-size: 16px;
-    font-family: 'vitro',serif;
+    font-family:'vitro',serif;
 }
- 
+
 /* header */
 header{
-    /* border: 1px solid red; */
     position: fixed;
     left: 0;top:0;
     width: 100%;
@@ -33,15 +41,6 @@ header{
     transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
     z-index: 1000;
 }
-header:after{
-    /* border-top: 1px solid red; */
-    /* content:"";
-    position:absolute;
-    left:0;top:95px;
-    width:100%;
-    height:1px;
-    background:red; */
-}
 header:hover{
     background: #005841;
     color:#fff;
@@ -49,7 +48,6 @@ header:hover{
 }
 
 .innerHeader {
-    /* border: 1px solid red; */
     width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -57,22 +55,18 @@ header:hover{
 }
 .innerHeader >nav >  ul {
     display: flex;
-    /* border: 1px solid red; */
     height: 95px;
 }
 .innerHeader ul>li{
-    /* border: 1px solid red; */
     display: flex;
     flex: 1;
     position: relative;
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
-    font-weight: bold;
-    /* text-align: left; */
+    /* font-weight: bold; */
 }
 .innerHeader ul>li>ul {
-    /* border: 1px solid aqua; */
     position: absolute;
     left: 0;
     top: 95px;
@@ -80,10 +74,8 @@ header:hover{
     padding-bottom: 30px;
 }
 .innerHeader ul>li>ul>li{
-    /* border: 1px solid red; */
     padding:10px 0;
-    font-weight: 400;
-    /* text-align: left; */
+    font-weight: 400px;
 }
 .Establishment>a{
     background: #fff;
@@ -99,293 +91,118 @@ header:hover .Establishment>a {
     border: 1px solid #fff;
 }
 nav{
-    /* border:1px solid #fff; */
     width:840px;
 }
 .headerLogo {
-    /* border: 1px solid red; */
     width: 160px;
     align-items: center;
     display: flex;
 }
 .headerLogo a img{
-    /* border: 1px solid red; */
     width: 160px;
 }
 
 /* main */
-
-.swiper.station1{
+.main_p .swiper.station1{
     width: 100%;
-    height: 900px;
+    height: 100vh;
     margin-top:95px;
-    /* border: 1px solid red; */
 }
-
-.station1>.train>li{
-    /* border: 1px solid blue; */
+.main_p .station1>.train>li{
     position: relative;
 }
-
-.station1>.train>li img{
+.main_p .station1>.train>li img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(0.8);
 }
-
-.slideTxt{
+.main_p .slideTxt{
     position: absolute;
     width: 50%;
     left: 10%;
     top: 20%;
-    /* border: 1px solid lime; */
     color: #fff;
     padding: 10px;
-    opacity: 0;
+}
+.main_p .slideTxt p{    
     font-size: 4rem;
-    font-weight:bold;
-
 }
-
-.station1>.train>li.swiper-slide-active .slideTxt{
+.main_p .slideTxt h2{
+    font-size: 5rem;
+    font-weight: bold;
+}
+.main_p .station1>.train>li.swiper-slide-active .slideTxt{
     opacity: 1;
-    /* transform: translateY(0px); */
 }
-
-.station1 .swiper-pagination-bullet{
+.main_p .station1 .swiper-pagination-bullet{
     width: 20px;
     height: 20px;
 }
-.station1 .swiper-pagination-bullet-active {    
+.main_p .station1 .swiper-pagination-bullet-active {    
     background: #999;
 }
-.controler-station1{
-    display: flex;
-}
-.controler-station1>li{
-    flex: 1;
-    padding:20px 0;
-    font-size: 1.4rem;
-    text-align: center;
-    /* border: 1px solid black; */
-    cursor: pointer;
-}
-
-
-.swiper.station2{
+.main_p .station2{
     width: 100%;
-    height: 900px;
-    /* border: 1px solid red; */
+    height: 100vh;
 }
+.main_p .station2 .train{
+    display: flex;
 
-.station2>.train>li{
-    /* border: 1px solid blue; */
+}
+.main_p .station2 .train>li{
+   
+}
+.main_p .MenuTab{
+    width: 100%;
+    margin:0 auto;
+    height: 100vh;
+    display: flex;
     position: relative;
 }
-
-.station2>.train>li img{
-    /* border: 1px solid blue; */
-    position: absolute;
-    left: 300px;
-    width: 28%;
-    height: 100%;
-    margin: 50px auto;
-    object-fit: contain;
-}
-.station2>.train>li .slideTxt{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    right: 0;
-    top:0;
-    color: #000;
-    opacity: 0;
-    transform: translate(70%,40%);
-}
-.station2>.train>li .slideTxt h2{
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom:18px;
-}
-.station2>.train>li .slideTxt p{
-    font-size: 2rem;
-}
-.station2>.train>li .slideTxt a{
-    font-size: 1.2rem;
-    background: #005841;
-    color: #fff;
-    padding:10px;
-}
-
-.station2>.train>li.swiper-slide-active .slideTxt{
-    opacity: 1;
-    /* transform: translateY(0px); */
-}
-
-.station2 .swiper-pagination-bullet{
-    width: 20px;
-    height: 20px;
-}
-.station2 .swiper-pagination-bullet-active {    
-    background: #999;
-}
-.controler-station2{
-    display: flex;
-}
-.controler-station2>li{
-    /* flex: 1;
-    padding:20px 0;
-    font-size: 1.4rem;
-    text-align: center;
-    /* border: 1px solid black; */
-    /* cursor: pointer;  */
-}
-.tabMenu{
+.main_p .MenuTab .tabMenu{
     border: 1px solid black;
-    width: 50%;
-    height: 900px;
-    display: flex;
+    height: 50%;
+    width: 100vh;
 }
-.tabTip{
-    border:1px solid red;
-}
-.tabMenu h2{
-
-}
-.tabTip>li{
-    border: 1px solid blue;
-
-}
-.tabTip>li.on{
-    border-bottom:2px solid navy;
-
-}
-.tabDes{
-    padding:14px 0;
-
-    left: 0;
-    top: 0;
-
+.main_p .MenuTab .tabMenu >.on{
+    color: black;
+    opacity: 1;
 }
 
-.tabDes h3{
-    margin-bottom: 5px;
-}
-.tabDes p{
-    text-indent: 10px;
-}
-/* conceptconceptconceptconceptconceptconceptconcept */
-.concept{
-    /* border: 1px solid red; */
-    width:100%;
-    height:850px;
-}
-.conceptList{
-    display: flex;
-    width: 300%;
-    height: 100%;
-}
-.conceptList>li{
-    flex: 1;
-    height: 100%;
-}
-
-/* 666666666666 */
-.video{
-    border: 1px solid red;
+.tabMenu > dd{
+    position:absolute;
+    border: 1px solid black;
+    left:0;
+    top:50px;
     width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    display: none;
 }
-.video h2{
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    margin: 50px;
+.tabMenu > dt.on + dd{
+    display: block;
 }
-.video ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.video ul>li{
-    padding:20px 0;
-}
-.video li>a{
-    border:1px solid red;
+
+.main_p .station_sig{
 
 }
-.video li>
-/* 77777777777777 */
-.sns{
-    border:1px solid #005841;
-    background: #005841;
-    width: 100%;
-    height: 900px;
-    margin:0 auto;
-    border-radius: 50% 50% 0 0;
-}
-.snsList{
-    width: 1440px;
-    height: 900px;
-    margin:0 auto;
-    margin:100px;
-}
-.snsList>section{
-    display: flex;
-   
-    margin-left: 180px;
-    padding-top: 80px;
-    margin-bottom:110px;
-}
-.snsList>section>h2{
-    font-size: 4rem;
-    font-weight: bold;
-    color: #fff;
-}
-.snsList>section>p{
-    font-size: 1.2rem;
-    color: #fff;
-}
-.snsList>ul{
-    border:1px solid red;
-    display: flex;
-    justify-content: space-between;
-}
-.snsList>ul>li{
-    padding-right: 40px;
-}
-.snsList>ul>li>a>img{
-    width: 300px;
-    height: 300px;
-    object-fit: contain;
-} 
-
 /* footer */
 footer{
-    /* border: 1px solid red; */
     width: 100%;
     height: 50vh;
     background: #005841;
     color: #fff;
-    /* position: relative;
-    left: 0;
-    bottom: 0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .footerLogo h1{
-    /* border: 1px solid red; */
-    /* position: absolute; */
     width: 160px;
     padding-bottom:30px;
 }
 .footerLogo a img{
     width: 100%;
+    height: 100%;
 }
 .footerInfo{
     display: flex;
@@ -408,9 +225,15 @@ footer{
     padding-right:20px;
 }
 .footerTop{
-    border:3px solid #fff;
-    border-radius: 50% 50%;
-    width: 40px;
-    height: 40px;
-    margin-top:50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    background: #fff;
+    color: #005841;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
 }

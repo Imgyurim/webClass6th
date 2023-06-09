@@ -24,12 +24,14 @@ $(window).scroll(function(){
         
         if(delta<0){
          //마우스 휠을 내렸을 때
+        //  console.log($(this).next().length)
          if($(this).next().length!=0){
              let posTop = $(this).next().offset().top
          $("html,body").stop().animate({scrollTop:posTop},1000)
          }
         }else{
          //마우스 휠을 올렸을 때
+          //  console.log($(this).prev().length)
          if($(this).prev().length!=0){
         let posTop = $(this).prev().offset().top
         $("html,body").stop().animate({scrollTop:posTop},1000)
