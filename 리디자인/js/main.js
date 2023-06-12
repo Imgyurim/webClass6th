@@ -1,6 +1,6 @@
 window.onload = function(){
 
-    let station1 = new Swiper(".station1",{
+    let station1 = new Swiper(".main_p .station1",{
      loop:true,
      direction:"horizontal",
      pagination: {
@@ -16,15 +16,16 @@ window.onload = function(){
        speed:10
     });
 
-  let station2 = new Swiper(".station2",{
-    loop:true,
-    direction:"horizontal",
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets', 
-        clickable:true
-      },
+    let station2 = new Swiper(".main_p .station2",{
+      loop:true,
+      direction:"horizontal",
+      pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets', 
+          clickable:true
+        },
 
-  })
-
-  }
+    })
+   
+}
+ 
