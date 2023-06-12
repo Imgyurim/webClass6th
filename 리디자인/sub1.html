@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>subpage1</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/sub1.js"></script>
 </head>
 <body>
     <div>
@@ -44,62 +46,234 @@
         </header>
         <main>
            <div class="subpage1">
-            <div class="menuList tabMenu">
-                <h1>MENU</h1>
-                <ul class="tabTip">
-                    <li class="on"><a href="#">SIGNATURE</a></li>
-                    <li><a href="#">베이커리</a></li>
-                    <li><a href="#">에이드</a></li>
-                    <li><a href="#">커피</a></li>
-                    <li><a href="#">두배우유</a></li>
-                    <li><a href="#">콜라보메뉴 </a></li>
-                </ul>
-            </div>
-            <div class="menu tabMenu">
-                <ul class="tabTip">
-                    <li class="on">SIGNATURE</li>
-                    <li>베이커리</li>
-                    <li>에이드</li>
-                    <li>커피</li>
-                    <li>두배우유</li>
-                    <li>콜라보 메뉴</li>
-                </ul> 
-                <ul class="imgLisst">
-                    <li>
-                        <a href="#">
-                            <img src="./img/eggWaffle.png" alt="eggWaffle">
-                            <p>까이딴자이</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/milkTea.png" alt="milkTea">
-                            <p>홍콩행 밀크티</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/MilkteaCoffee.png" alt="MilkteaCoffee">
-                            <p>동윤영</p>
-                        </a>
-                    </li>                 
-                    <li>
-                        <a href="#">
-                            <img src="./img/lemonIcedTea.png" alt="lemonIcedTea">
-                            <p>동링차</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/lanFongYuen.png" alt="lanFongYuen">
-                            <p>란퐁유엔</p>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="pageNation">
-                    <li>더보기</li>
-                </ul>
-            </div>
+                <div class="subtab tabMenu">
+                    <h1>MENU</h1>
+                    <ul class="tap">
+                        <li id="sub1tab" class="on"><a href="#">SIGNATURE</a></li>
+                        <li><a href="#">베이커리</a></li>
+                        <li><a href="#">에이드</a></li>
+                        <li><a href="#">커피</a></li>
+                        <li><a href="#">두배우유</a></li>
+                        <li><a href="#">콜라보메뉴 </a></li>
+                    </ul>
+                </div>
+                <div class="subcontent">
+                    <ul class="content">
+                        <li id="sub1content" class="items on">
+                            <h2>SIGNATURE</h2>
+                            <ul>
+                                <li >
+                                    <a href="#">
+                                        <img src="./img/eggWaffle.png" alt="eggWaffle">
+                                        <p>까이딴자이</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/milkTea.png" alt="milkTea">
+                                        <p>홍콩행 밀크티</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/MilkteaCoffee.png" alt="MilkteaCoffee">
+                                        <p>동윤영</p>
+                                    </a>
+                                </li>                 
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/lemonIcedTea.png" alt="lemonIcedTea">
+                                        <p>동링차</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/lanFongYuen.png" alt="lanFongYuen">
+                                        <p>란퐁유엔</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="sub1content" class="items">
+                            <h2>베이커리</h2>
+                            <ul >
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/eggWaffle.png" alt="eggWaffle">
+                                        <p>까이딴자이</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/milkTea.png" alt="milkTea">
+                                        <p>홍콩행 밀크티</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/MilkteaCoffee.png" alt="MilkteaCoffee">
+                                        <p>동윤영</p>
+                                    </a>
+                                </li>                 
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/lemonIcedTea.png" alt="lemonIcedTea">
+                                        <p>동링차</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/lanFongYuen.png" alt="lanFongYuen">
+                                        <p>란퐁유엔</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="sub1content" class="items">
+                            <h2>에이드</h2>
+                            <ul >
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/eggWaffle.png" alt="eggWaffle">
+                                        <p>까이딴자이</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/milkTea.png" alt="milkTea">
+                                        <p>홍콩행 밀크티</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/MilkteaCoffee.png" alt="MilkteaCoffee">
+                                        <p>동윤영</p>
+                                    </a>
+                                </li>                 
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/lemonIcedTea.png" alt="lemonIcedTea">
+                                        <p>동링차</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/lanFongYuen.png" alt="lanFongYuen">
+                                        <p>란퐁유엔</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="items">
+                            <h2>커피</h2>
+                            <ul > 
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/eggWaffle.png" alt="eggWaffle">
+                                        <p>까이딴자이</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/milkTea.png" alt="milkTea">
+                                        <p>홍콩행 밀크티</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/MilkteaCoffee.png" alt="MilkteaCoffee">
+                                        <p>동윤영</p>
+                                    </a>
+                                </li>                 
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/lemonIcedTea.png" alt="lemonIcedTea">
+                                        <p>동링차</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/lanFongYuen.png" alt="lanFongYuen">
+                                        <p>란퐁유엔</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="items">
+                            <h2>두배우유</h2>
+                            <ul >
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/eggWaffle.png" alt="eggWaffle">
+                                        <p>까이딴자이</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/milkTea.png" alt="milkTea">
+                                        <p>홍콩행 밀크티</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/MilkteaCoffee.png" alt="MilkteaCoffee">
+                                        <p>동윤영</p>
+                                    </a>
+                                </li>                 
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/lemonIcedTea.png" alt="lemonIcedTea">
+                                        <p>동링차</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/lanFongYuen.png" alt="lanFongYuen">
+                                        <p>란퐁유엔</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="items">
+                            <h2>콜라보 메뉴</h2>
+                            <ul >
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/eggWaffle.png" alt="eggWaffle">
+                                        <p>까이딴자이</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/milkTea.png" alt="milkTea">
+                                        <p>홍콩행 밀크티</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/MilkteaCoffee.png" alt="MilkteaCoffee">
+                                        <p>동윤영</p>
+                                    </a>
+                                </li>                 
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/lemonIcedTea.png" alt="lemonIcedTea">
+                                        <p>동링차</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/lanFongYuen.png" alt="lanFongYuen">
+                                        <p>란퐁유엔</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="pageNation">
+                        <li><a href="#">더보기</a></li>
+                    </ul>
+                </div>
            </div>
         </main>
         <footer>

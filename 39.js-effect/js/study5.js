@@ -1,6 +1,53 @@
 $(document).ready(function(){
 
     let count = 0;
+    let perView;
+    //train클래스 너비를 변경 => train클래스의 너비를 불러와서 perView로 나눈후 결과를 다시 적용
+    let stationWidth;
+    let trainWidth;
+
+    let winWidth = $(window).width()
+    if($(window).width()>=1024){
+        perView = 2.5
+        stationWidth = $(".station").width()
+        trainWidth = stationWidth  * 5 / perView
+        $(".train").width(trainWidth)
+       }else if(winWidth>=768){
+        perView = 2
+        stationWidth = $(".station").width()
+        trainWidth = stationWidth  * 5 / perView
+        $(".train").width(trainWidth)
+       }else{
+        perView = 1
+        stationWidth = $(".station").width() 
+        trainWidth = stationWidth  * 5 / perView
+        $(".train").width(trainWidth)
+       }
+
+    // $(".train").width(trainWidth)
+    $(window).resize(function(){
+        let winWidth = $(window).width()
+        if($(window).width()>=1024){
+            perView = 2.5
+            stationWidth = $(".station").width()
+            trainWidth = stationWidth  * 5 / perView
+            $(".train").width(trainWidth)
+           }else if(winWidth>=768){
+            perView = 2
+            stationWidth = $(".station").width()
+            trainWidth = stationWidth  * 5 / perView
+            $(".train").width(trainWidth)
+           }else{
+            perView = 1
+            stationWidth = $(".station").width() 
+            trainWidth = stationWidth  * 5 / perView
+            $(".train").width(trainWidth)
+           }
+
+    })
+    
+
+    
     $(".btnNext").click(function(e){
         e.preventDefault()
         count++
@@ -21,4 +68,4 @@ $(document).ready(function(){
         $(".train").css("transform","translateX("+(-20*idx)+"%)")
     }
     moveSlider(2)
-}) 
+})
