@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/sub1.js"></script>
+    <link rel="stylesheet" href="./sub1.html">
     <link rel="stylesheet" href="./css/main.css">
     <link
   rel="stylesheet"
@@ -30,7 +33,7 @@
                         <li><a href="#">홍콩다방</a></li>
                         <li><a href="./sub1.html">메뉴</a>
                             <ul>
-                                <li><a href="#">시그니쳐</a></li>
+                                <li><a href="#sub1content">시그니쳐</a></li>
                                 <li><a href="#">베이커리</a></li>
                                 <li><a href="#">커피</a></li>
                                 <li><a href="#">에이드</a></li>
@@ -104,10 +107,10 @@
                 </ul>
                 <div class="swiper-pagination"></div>
             </div>
-            <div class="contents">
-                <section class="tabMenu">
+            <div class="content">
+                <section class="maintab">
                     <h2>MENU</h2>
-                    <ul class="tapTip">
+                    <ul class="tab">
                         <li class="on"><a href="#sig">SIGNATURE</a></li>
                         <li><a href="#bakery">BAKERY</a></li>
                         <li><a href="#coffee">COFFEE</a></li>
@@ -116,13 +119,13 @@
                         <li><a href="#collaboration">콜라보 메뉴</a></li>
                     </ul>
                 </section>
-                <section class="tab">
-                    <div id="sig tab1" class="items active">
+                <section class="maincontent">
+                    <div id="sig tab1" class="items on">
                         <h3>SIGNATURE</h3>
                         <p>한 번도 안먹어본 사람은 있어도<br>
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! !</p>
                         <ul class="menu_img">
-                            <li><img src="./img/eggWaffle.png" alt="eggWaffle"></li>
+                            <li class="on"><img src="./img/eggWaffle.png" alt="eggWaffle"></li>
                             <li><img src="./img/milkTea.png" alt="milkTea"></li>
                             <li><img src="./img/MilkteaCoffee.png" alt="MilkteaCoffee"></li>
                             <li><img src="./img/lemonIcedTea.png" alt="Lemon iced tea"></li>
@@ -130,14 +133,21 @@
                         <h4>토핑류</h4>
                         <!-- 까이딴자이-->
                         <ul class="top_img">
-                            <li><img src="./img/corn (1).png" alt="옥수수"></li>
-                            <li><img src="./img/cho.png" alt="초코"></li>
-                            <li><img src="./img/cho.png" alt="고구마"></li>
-                            <li><img src="./img/cho.png" alt="치즈"></li>
-                            <li><img src="./img/cho.png" alt="카라멜빈"></li>
-                            <li><img src="./img/cho.png" alt="오레오"></li>
-                            <li><img src="./img/cho.png" alt="로투스"></li>
-                            <li><img src="./img/whipped cream.png" alt="생크림"></li>
+                            <li class="on">
+                                <ul>
+                                    <li ><img src="./img/corn (1).png" alt="옥수수"></li>
+                                    <li><img src="./img/cho.png" alt="초코"></li>
+                                    <li><img src="./img/cho.png" alt="고구마"></li>
+                                    <li><img src="./img/cho.png" alt="치즈"></li>
+                                    <li><img src="./img/cho.png" alt="카라멜빈"></li>
+                                    <li><img src="./img/cho.png" alt="오레오"></li>
+                                    <li><img src="./img/cho.png" alt="로투스"></li>
+                                    <li><img src="./img/whipped cream.png" alt="생크림"></li>
+                                </ul>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
                     </div>
                     <div id="bakery tab2" class="items">
@@ -145,15 +155,15 @@
                         <p>한 번도 안먹어본 사람은 있어도 
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
                         <div class="station_bakery">
-                            <ul class="train_bakery">
-                                <li><img src="./img/eggWaffle.png" alt="eggWaffle"></li>
+                            <ul class="menu_img">
+                                <li class="on"><img src="./img/eggWaffle.png" alt="eggWaffle"></li>
                                 <li><img src="./img/lanFongYuen.png" alt="lanFongYuen"></li>
                                 <li><img src="./img/eggtart.png" alt="eggtart"></li>
                             </ul>
                         </div>
                         <h4>토핑류</h4>
-                        <ul>
-                            <li>
+                        <ul class="top_img">
+                            <li class="on">
                                 <ul>
                                     <!-- 까이딴자이 -->
                                     <li><img src="./img/corn (1).png" alt="옥수수"></li>
@@ -166,6 +176,7 @@
                                     <li><img src="./img/whipped cream.png" alt="생크림"></li>
                                 </ul>
                             </li>
+                            <li></li>
                             <li>
                                 <ul>
                                     <!-- 타르트 -->
@@ -182,7 +193,7 @@
                         <p>한 번도 안먹어본 사람은 있어도 
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
                         <div class="station_ade">
-                            <ul class="train_ade">
+                            <ul class="menu_img">
                                 <li><img src="./img/lemon.png" alt="Fruit Punch Lemon"></li>
                                 <li><img src="./img/mango.png" alt="Fruit Punch Mango"></li>
                                 <li><img src="./img/ShineMuscat-.png" alt="Fruit Punch ShineMuscat"></li>
@@ -204,7 +215,7 @@
                         <p>한 번도 안먹어본 사람은 있어도 
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
                         <div class="station_coffee">
-                            <ul class="train_coffee">
+                            <ul class="menu_img">
                                 <li><img src="./img/americano.png" alt="americano"></li>
                                 <li><img src="./img/caffelatte.png" alt="카페라떼"></li>
                                 <li><img src="./img/vanillalatte.png" alt="바닐라라떼"></li>
@@ -218,7 +229,7 @@
                         <p>한 번도 안먹어본 사람은 있어도 
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
                         <div class="station_doubleMilk">
-                            <ul class="train_doubleMilk">
+                            <ul class="menu_img">
                                 <li><img src="./img/double Milk.png" alt="double Milk"></li>
                                 <li><img src="./img/double Green tea Milk.png" alt="double Green tea Milk"></li>
                                 <li><img src="./img/double Mugwort Milk.png" alt="double Mugwort"></li>
@@ -233,7 +244,7 @@
                         <p>한 번도 안먹어본 사람은 있어도 
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
                         <div class="station_collaboration">
-                            <ul class="train_collaboration">
+                            <ul class="menu_img">
                                 <!-- 하겐다즈-->
                                 <li><img src="./img/vanillaSingle.png" alt="vanillaSingle"></li>
                                 <li><img src="./img/Belgian chocolate Single.png" alt="Belgian chocolate Single"></li>
@@ -300,35 +311,35 @@
                     </ul>
                 </section>
                 <ul class="slide_R">
-                    <li>
+                    <li class="on">
                         <h3>Point 01.</h3>
-                        <p><span>일매출 100만원!</span>
+                        <p><span>일매출 100만원!</span><br>
                         확실한 컨셉과 차별화된 아이템</p>
                     </li>
                     <li>
                         <h3>Point 02.</h3>
                         <p>직영 공장 운영으로
-                        가맹 점주 <span>마진 극대화</span>
+                        가맹 점주 <span>마진 극대화</span><br>
                         <b>및 쉬운 조리 공정</b></p>
                     </li>
                     <li>
                         <h3>Point 03.</h3>
-                        <p><span>인건비 절감!</span>
+                        <p><span>인건비 절감!</span><br>
                         1.5인 운영 시스템</p>
                     </li>
                     <li>
                         <h3>Point 04.</h3>
-                        <p><span>SNS 감성</span>에 맞는
+                        <p><span>SNS 감성</span>에 맞는<br>
                         패키지와 인테리어 디자인</p>/a>
                     </li>
                     <li>
                         <h3>Point 05.</h3>
-                        <p>입소문으로 퍼지는
+                        <p>입소문으로 퍼지는<br>
                         <span>홍콩다방의 마케팅</span></p>
                     </li>
                     <li>
                         <h3>Point 06.</h3>
-                        <p><span>부담없는 창업비용</span>과
+                        <p><span>부담없는 창업비용</span>과<br>
                         다양한 상권에</p>
                     </li>
                 </ul>
@@ -341,22 +352,21 @@
                 <h2>홍콩다방 TV</h2>
                 <ul>
                     <li>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/r5XS3lbRysE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/r5XS3lbRysE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </li>
                     <li>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MBuna7wmUig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/MBuna7wmUig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </li>
                     <li>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/eCmSqVK5FCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>영상보러가기</p>
-                            <span></span>
-                        </a>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/eCmSqVK5FCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </li>
                 </ul>
-                <span class="slide_text">우리동네 작은 홍콩, 홍콩다방에서 홍콩의 맛과 멋을 즐겨보세요!</span >
+                <a href=""></a>
+                <ul class="youtube_link">
+                    <li><a href="#">영상보러가기</a></li>
+                    <li><a href="#"><p>GO</p></a></li>
+                </ul>
+                <span class="slide_text">우리동네 작은 홍콩, 홍콩다방에서 홍콩의 맛과 멋을 즐겨보세요! 우리동네 작은 홍콩, 홍콩다방에서 홍콩의 맛과 멋을 즐겨보세요!  우리동네 작은 홍콩, 홍콩다방에서 홍콩의 맛과 멋</span >
             </div>
             <div class="sns station4 swiper">
                 <div class="snsList">

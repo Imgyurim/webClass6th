@@ -176,73 +176,119 @@ nav{
     color: #fff;
     padding:0 0;
 }
-.main_p .contents{
-    background: #999;
+.main_p .content{
     display: flex;
     width: 100%;
     height: 100vh;
 }
-.main_p .contents .tabMenu{
+.main_p .content .maintab{
     width:50%;
     height: 100vh;
-    padding: 80px 90px;
-    border: 1px solid floralwhite;
+    /* padding: 80px 90px; */
+    /* border: 1px solid red; */
 }
-.main_p .contents .tabMenu h2{
+.main_p .content .maintab h2{
     font-size: 6rem;
     font-weight: bold;
     padding-bottom: 25px;
+    padding-left: 90px;
+    padding-top: 80px;
 }
-.main_p .contents>.tabMenu .tapTip>li{
+.main_p .content .maintab>.tab{
+    padding-left: 90px;
+}
+.main_p .content>.maintab .tab>li{
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 10px;
 }
-.main_p .contents>.tabMenu .tapTip>li.on{
+.main_p .content>.maintab .tab>li.on{
     color: #005841 ;
 }
-.main_p .contents>.tab{
-    margin-top:90px;
-    margin-left:0px;
+.main_p .content>.maincontent{
+    padding-top: 90px;
     width: 50%;
+    background: #ededed;
 }
-.main_p .contents>.tab .items{
+.main_p .content>.maincontent .items{
     width: 100%;
     display: none;
     align-items: center;
 }
-.main_p .contents>.tab .items.active{
-    display: block;
+.main_p .content>.maincontent .items.on{
+    display:block;
 }
-.main_p .contents>.tab .items ul{
+.main_p .content>.maincontent .items ul{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.main_p .contents>.tab .items ul>li{
-    padding:30px 30px;
+.main_p .content>.maincontent .items ul>li{
 }
-.main_p .contents>.tab .items>h3{
-    font-size: 2rem;
+.main_p .content>.maincontent .items>h3{
+    font-size: 3.5rem;
     font-weight: bold;
+    padding-left: 90px;
+    color: #005841;
 }
-.main_p .contents>.tab .items .menu_img{
-    width: 200px;
-    height: 200px;
+.main_p .content>.maincontent .items>p{
+    padding-left: 90px;
+    padding-top: 15px;
+    color: #005841
 }
-.main_p .contents>.tab .items .top_img{
-    width: 200px;
-    height: 200px;
+.main_p .content>.maincontent .items>h4{
+    font-size: 1.2rem;
+    border-bottom:1px solid #005841;
+    margin-left: 90px;
 }
+.main_p .content>.maincontent .items .menu_img{
+    cursor: pointer;
+}
+.main_p .content>.maincontent .items .menu_img>li{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main_p .content>.maincontent .items .menu_img>li img{
+    width: 300px;
+    height: 300px;
+    transform: translateX(-120px);
+}
+.main_p .content>.maincontent .items .menu_img>li:first-of-type img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+
+}
+.main_p .content>.maincontent .items .top_img{
+    margin-left: 90px;
+}
+.main_p .content>.maincontent .items .top_img>li.on{
+    display:block;
+}
+.main_p .content>.maincontent .items .top_img>li{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main_p .content>.maincontent .items .top_img>li img{
+    width: 50px;
+    height: 50px;
+}
+
 .main_p .News{
     width: 100%;
     height: 100vh;
     display: flex;
+    color: #005841;
 }
 .main_p .News>.News_L{
-    border: 1px solid red;
+    border:1px solid black;
     width: 100%;
 }
 .main_p .News>.News_L>h2{
-    font-size: 4rem;
+    transform: translate(10%, 9%);
+    font-size: 7.5rem;
     font-weight: bold;
 }
 .main_p .News>.News_R{
@@ -254,12 +300,21 @@ nav{
 .main_p .News>.News_R>li{
     border:1px solid black;
     height: 100%;
+    position: relative;
 }
 .main_p .News>.News_R>li>p{
-    font-size: 1.2em;
+    font-size: 1.5em;
+    position: absolute;
+    left: 50px;
+    top: 33%;
+    color: #889081;
+    font-weight: bold;
 }
 .main_p .News>.News_R>li>h4{
     font-size:2rem;
+    position: absolute;
+    left: 50px;
+    top: 50%;
 }
 .main_p .slide{
     width: 100%;
@@ -267,18 +322,28 @@ nav{
     display: flex;
 }
 .main_p .slide .slide_L{
-    width:60%;
+    width: 80%;
     background: #005841;
     color:#fff
 }
 .main_p .slide .slide_L>ul>li{
+    text-align: center;
+}
+.main_p .slide .slide_L>ul>li p{
+    transform: translate(-2%,410%);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main_p .slide .slide_L>ul>li h2{
     font-size: 4rem;
     font-weight: bold;
-    text-align: center;
+    transform: translate(-2%,200%);
 }
 .main_p .slide .slideL_list{
     display: flex;
     flex-wrap: wrap;
+    transform: translate(20%,60%);
+    width: 68%;
 }
 .main_p .slide .slideL_list>li{
     width: 300px;
@@ -286,28 +351,70 @@ nav{
 .main_p .slide .slideL_list>li img{
     background: #fff;
     border-radius: 50%;
+    width: 200px;
 }
 .main_p .slide .slide_R{
-    width:40%;
+    /* width:40%; */
+    color: #005841;
+}
+.main_p .slide .slide_R>li{
+    width:100%;
+    height: 100%;
+    transform: translate(15%, 50%);
+}
+.main_p .slide .slide_R>li h3{
+    font-size: 2rem;
+}
+.main_p .slide .slide_R>li p>span{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.main_p .slide .slide_R>li p{
+    font-size: 2rem;
 }
 .main_p .video{
-    /* height: 100vh; */
-    border: 1px solid blue;
-    width: 100%;
-    margin: 0 auto;
+    height:100vh;
 }
 .main_p .video>h2{
+    margin-top: 150px;
+    margin-bottom: 100px;
     text-align: center;
     font-size: 4rem;
     font-weight: bold;
+    color: #005841;
 }
 .main_p .video>ul{
     display: flex;
-    justify-content: space-between;
-    width: 1000px;
-    margin: 0 auto;
+    justify-content: center;
 }
-.main_p .video>ul>li{
+.main_p .video>ul>li {
+    padding-right: 90px;
+    border-radius: 50%;
+}
+.main_p .video .youtube_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 250px;
+}
+.main_p .video .youtube_link>li a{
+    font-size:0.9rem;
+}
+.main_p .video .youtube_link>li a>p{
+    border-radius: 50%;
+    color: #fff;
+    background: #005841;
+    border: 10px solid #005841;
+}
+.main_p .video .slide_text{
+    font-size: 1.5rem;
+    font-weight: bold;
+    overflow: hidden;
+    border:1px solid #005841;
+    padding: 6px 0;
+    color: #005841;
 }
 .main_p .sns{
     width: 100%;
