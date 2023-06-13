@@ -174,7 +174,8 @@ nav{
 .main_p .station2>.train>.swiper-slide a{
     background: #005841;
     color: #fff;
-    padding:0 0;
+    padding: 15px 30px;
+    font-size: 1.2rem;
 }
 .main_p .content{
     display: flex;
@@ -284,12 +285,20 @@ nav{
 }
 .main_p .News>.News_L{
     border:1px solid black;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    justify-content: space-between;
+    transition: all 0.5s ease 0s;
 }
-.main_p .News>.News_L>h2{
+.main_p .News>.News_L>li>h2{
     transform: translate(10%, 9%);
     font-size: 7.5rem;
     font-weight: bold;
+}
+.main_p .News>.News_L>li.an{ 
+    transform: rotateX(180deg);
+    /* animation: rotate 5s infinite; */
 }
 .main_p .News>.News_R{
     display: flex;
@@ -422,19 +431,41 @@ nav{
     background: #005841;
     color: #fff;
     border-radius: 50% 50% 0 0;
+    position: relative;
+}
+.main_p .snsTitle{
+    display: flex;
+    padding-top: 240px;
+}
+.main_p .snsTitle>h2{
+    color:#fff;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.main_p .snsTitle>p{
+    padding-left: 19px;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-top: 136px;
 }
 .main_p .sns>.snsList{
     width: 1440px;
     height: 100vh;
     margin:0 auto;
 }
-.main_p .sns>.snsList ul{
+.main_p .sns>.snsList .snsSlide{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 100%;
 }
-.main_p .sns>.snsList ul>li{
+.main_p .sns>.snsList .snsSlide>li{
     width: 300px;
+    padding-right: 30px;
 }
 
 /* subpage1 */
