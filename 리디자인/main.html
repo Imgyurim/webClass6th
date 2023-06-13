@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>홍콩다방 메인페이지</title>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./js/sub1.js"></script>
-    <link rel="stylesheet" href="./sub1.html">
     <link rel="stylesheet" href="./css/main.css">
     <link
   rel="stylesheet"
@@ -18,6 +17,8 @@
 <script src="./js/main.js"></script>
 </head>
 <body>
+    <div id="cursor" style="top: 901px; left: 290px;"></div>
+    <script src="./js/mouse.js"></script>
     <div class="main_p">
         <header>
             <div class="innerHeader">
@@ -53,8 +54,11 @@
                 </nav>
             </div>
         </header>
-        <main>
-            <div class="station1 swiper">
+        <main class="wrap">
+            <section class="con">
+                <p>a</p>
+            </section>
+            <div class="con1 station1 swiper">
                 <ul class="train swiper-wrapper">
                     <li class="swiper-slide">
                         <img src="./img/b1.jpg" alt="bannerImg1">
@@ -82,7 +86,7 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-            <div class="station2 swiper">
+            <div class="con2 station2 swiper">
                 <ul class="train swiper-wrapper">
                     <li class="swiper-slide">
                         <img src="./img/c.png" alt="컵">
@@ -106,18 +110,30 @@
                 </ul>
                 <div class="swiper-pagination"></div>
             </div>
-            <div class="content swiper">
-                <section class="maintab">
-                    <h2>MENU</h2>
-                    <ul class="tab">
-                        <li class="on"><a href="#sig">SIGNATURE</a></li>
-                        <li><a href="#bakery">BAKERY</a></li>
-                        <li><a href="#coffee">COFFEE</a></li>
-                        <li><a href="#ade">ADE</a></li>
-                        <li><a href="#doubleMilk">두배우유</a></li>
-                        <li><a href="#collaboration">콜라보 메뉴</a></li>
-                    </ul>
-                </section>
+            <div class="con3 content swiper">
+               <div class="category_left">
+                    <section class="bg_area">
+                        <ul class="bg_category">
+                            <li class="sig_bg on" style="background-image:url(./img/main-img.png)"></li>
+                            <li class="bak_bg" style="background-image: url(./img/be.png);"></li>
+                            <li class="cof_bg" style="background-image: url(./img/main-img.png);"></li>
+                            <li class="ade_bg" style="background-image: url(./img/be.png);"></li>
+                            <li class="dou_bg" style="background-image: url(./img/main-img.png);"></li>
+                            <li class="col_bg" style="background-image: url(./img/be.png);"></li>
+                        </ul>
+                    </section>
+                    <section class="maintab">
+                        <h2>MENU</h2>
+                        <ul class="tab">
+                            <li class="on"><a href="#sig">SIGNATURE</a></li>
+                            <li><a href="#bakery">BAKERY</a></li>
+                            <li><a href="#coffee">COFFEE</a></li>
+                            <li><a href="#ade">ADE</a></li>
+                            <li><a href="#doubleMilk">두배우유</a></li>
+                            <li><a href="#collaboration">콜라보 메뉴</a></li>
+                        </ul>
+                    </section>
+               </div>
                 <section class="maincontent">
                     <div class="items on sig tab1">
                         <h3>SIGNATURE</h3>
@@ -130,12 +146,44 @@
                                 <li><img src="./img/MilkteaCoffee.png" alt="MilkteaCoffee"></li>
                                 <li><img src="./img/lemonIcedTea.png" alt="Lemon iced tea"></li>
                             </ul>
+                            <div class="topping">
+                                <h4>토핑류</h4>
+                                <!-- 까이딴자이-->
+                                <ul class="topping_img">
+                                    <li class="on ">
+                                        <ul>
+                                            <!-- <li ><img src="./img/corn (1).png" alt="옥수수"></li> -->
+                                            <li><img src="./img/cho.png" alt="초코"></li>
+                                            <li><img src="./img/cho.png" alt="고구마"></li>
+                                            <li><img src="./img/cho.png" alt="치즈"></li>
+                                            <li><img src="./img/cho.png" alt="카라멜빈"></li>
+                                            <li><img src="./img/cho.png" alt="오레오"></li>
+                                            <li><img src="./img/cho.png" alt="로투스"></li>
+                                            <!-- <li><img src="./img/whipped cream.png" alt="생크림"></li> -->
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="items bakery tab2">
+                        <h3>BAKERY</h3>
+                        <p>한 번도 안먹어본 사람은 있어도 <br>
+                            한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
+                        <div class="station_bakery">
+                            <ul class="menu_img">
+                                <li class="on"><img src="./img/eggWaffle.png" alt="eggWaffle"></li>
+                                <li><img src="./img/lanFongYuen.png" alt="lanFongYuen"></li>
+                                <li><img src="./img/eggtart.png" alt="eggtart"></li>
+                            </ul>
+                        </div>
+                       <div class="topping">
                             <h4>토핑류</h4>
-                            <!-- 까이딴자이-->
                             <ul class="topping_img">
-                                <li class="on ">
+                                <li class="on">
                                     <ul>
-                                        <!-- <li ><img src="./img/corn (1).png" alt="옥수수"></li> -->
+                                        <!-- 까이딴자이 -->
+                                        <!-- <li><img src="./img/corn (1).png" alt="옥수수"></li> -->
                                         <li><img src="./img/cho.png" alt="초코"></li>
                                         <li><img src="./img/cho.png" alt="고구마"></li>
                                         <li><img src="./img/cho.png" alt="치즈"></li>
@@ -145,50 +193,22 @@
                                         <!-- <li><img src="./img/whipped cream.png" alt="생크림"></li> -->
                                     </ul>
                                 </li>
+                                <li></li>
+                                <li>
+                                    <ul>
+                                        <!-- 타르트 -->
+                                        <li><img src="./img/cho.png" alt="코코넛"></li>
+                                        <li><img src="./img/cho.png" alt="콘치즈"></li>
+                                        <li><img src="./img/cho.png" alt="명란"></li>
+                                        <li><img src="./img/cho.png" alt="부추"></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </div>
-                        </div>
-                    <div class="items bakery tab2">
-                        <h3>BAKERY</h3>
-                        <p>한 번도 안먹어본 사람은 있어도 
-                            한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
-                        <div class="station_bakery">
-                            <ul class="menu_img">
-                                <li class="on"><img src="./img/eggWaffle.png" alt="eggWaffle"></li>
-                                <li><img src="./img/lanFongYuen.png" alt="lanFongYuen"></li>
-                                <li><img src="./img/eggtart.png" alt="eggtart"></li>
-                            </ul>
-                        </div>
-                        <h4>토핑류</h4>
-                        <ul class="topping_img">
-                            <li class="on">
-                                <ul>
-                                    <!-- 까이딴자이 -->
-                                    <!-- <li><img src="./img/corn (1).png" alt="옥수수"></li> -->
-                                    <li><img src="./img/cho.png" alt="초코"></li>
-                                    <li><img src="./img/cho.png" alt="고구마"></li>
-                                    <li><img src="./img/cho.png" alt="치즈"></li>
-                                    <li><img src="./img/cho.png" alt="카라멜빈"></li>
-                                    <li><img src="./img/cho.png" alt="오레오"></li>
-                                    <li><img src="./img/cho.png" alt="로투스"></li>
-                                    <!-- <li><img src="./img/whipped cream.png" alt="생크림"></li> -->
-                                </ul>
-                            </li>
-                            <li></li>
-                            <li>
-                                <ul>
-                                    <!-- 타르트 -->
-                                    <li><img src="./img/cho.png" alt="코코넛"></li>
-                                    <li><img src="./img/cho.png" alt="콘치즈"></li>
-                                    <li><img src="./img/cho.png" alt="명란"></li>
-                                    <li><img src="./img/cho.png" alt="부추"></li>
-                                </ul>
-                            </li>
-                        </ul>
+                       </div>
                     </div>
                     <div class="items ade tab3">
                         <h3>ADE</h3>
-                        <p>한 번도 안먹어본 사람은 있어도 
+                        <p>한 번도 안먹어본 사람은 있어도 <br>
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
                         <div class="station_ade">
                             <ul class="menu_img">
@@ -210,7 +230,7 @@
                     </div>
                     <div class="items tab4 coffee">
                         <h3>COFFEE</h3>
-                        <p>한 번도 안먹어본 사람은 있어도 
+                        <p>한 번도 안먹어본 사람은 있어도 <br>
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
                         <div class="station_coffee">
                             <ul class="menu_img">
@@ -224,7 +244,7 @@
                     </div>
                     <div class="items doubleMilk tab5">
                         <h3>두배우유</h3>
-                        <p>한 번도 안먹어본 사람은 있어도 
+                        <p>한 번도 안먹어본 사람은 있어도 <br>
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
                         <div class="station_doubleMilk">
                             <ul class="menu_img">
@@ -239,7 +259,7 @@
                     </div>
                     <div id="collaboration tab6" class="items">
                         <h3>콜라보메뉴</h3>
-                        <p>한 번도 안먹어본 사람은 있어도 
+                        <p>한 번도 안먹어본 사람은 있어도 <br>
                             한 번만 먹은 사람은 없다는 마성의 홍콩와플! </p>
                         <div class="station_collaboration">
                             <ul class="menu_img">
@@ -265,7 +285,7 @@
                     </div>
                 </section>
             </div>
-            <div class="News">
+            <div class="con4 News">
                 <ul class="News_L">
                     <li>
                         <h2>NEWS&<br>
@@ -310,7 +330,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="slide">
+            <div class="con5 slide">
                 <section class="slide_L">
                     <ul class="train">
                         <li class="on">
@@ -396,7 +416,7 @@
                         </li>
                         <li class="swiper-slide">
                             <h3>Point 02.</h3>
-                            <p>직영 공장 운영으로
+                            <p>직영 공장 운영으로<br>
                             가맹 점주 <span>마진 극대화</span><br>
                             <b>및 쉬운 조리 공정</b></p>
                         </li>
@@ -408,7 +428,7 @@
                         <li class="swiper-slide">
                             <h3>Point 04.</h3>
                             <p><span>SNS 감성</span>에 맞는<br>
-                            패키지와 인테리어 디자인</p>/a>
+                            패키지와 인테리어 디자인</p>
                         </li>
                         <li class="swiper-slide">
                             <h3>Point 05.</h3>
@@ -425,16 +445,16 @@
                 
                 <div class="controler">
                     <a href="#" class="btnPrev">
-                        <span class="arrow-prev"></span>
-                        <span class="arrow-next"></span>
+                        <span></span>
+                        <span></span>
                     </a>
                     <a href="#" class="btnNext">
-                        <span class="arrow-prev"></span>
-                        <span class="arrow-next"></span>
+                        <span></span>
+                        <span></span>
                     </a>
                 </div>
             </div>
-            <div class="video">
+            <div class="con6 video">
                 <h2>홍콩다방 TV</h2>
                 <ul>
                     <li>
@@ -458,7 +478,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="sns">
+            <div class="con7 sns">
                 <div class="snsList">
                     <section class="snsTitle">
                         <h2>SNS<br>
@@ -533,7 +553,7 @@
                     </section>
                 </div>  
             </div>
-        </mainp>
+        </main>
         <footer>
             <div class="footerLogo">
                 <h1>
@@ -559,6 +579,7 @@
             </div>
             <span class="footerTop">
                 <a href="#"><img src="./img/arrow-up-line.svg" alt="top"></a>
+                <!-- <p>TOP</p> -->
             </span>
         </footer>
     </div>
