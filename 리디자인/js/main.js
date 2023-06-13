@@ -27,9 +27,16 @@ window.onload = function(){
         },
 
     });
-
-
+    let station4 = new Swiper(".main_p .station4",{
+      loop:true,
+      direction:"horizontal",
+        navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+     });
    
+
 
 }
  

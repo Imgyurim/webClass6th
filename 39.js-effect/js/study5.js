@@ -53,19 +53,34 @@ $(document).ready(function(){
         count++
         //기차가 왼쪽으로 500픽셀
         if(count>4){count=0}
-        $(".train").css("transform","translateX("+(-20*count)+"%)")
         moveSlider(count)
     })
     $(".btnPrev").click(function(e){
         e.preventDefault()
         count--
         if(count<0){count=4} //예외처리
-        $(".train").css("transform","translateX("+(-20*count)+"%)")
         moveSlider(count)
     })
 
+    // 자동슬라이드기능
+    let timer = setInterval(function(){
+        count++
+        if(count>4){count=0}
+        moveSlider(count)
+    },500)
+
+    $(".station").mouseover(function(){
+        clearInterval(timer)
+    })
+    $(".station").mouseout(function(){
+     timer = setInterval(function(){
+            count++
+            if(count>4){count=0}
+            moveSlider(count)
+        },500)
+    })
     function moveSlider(idx){
         $(".train").css("transform","translateX("+(-20*idx)+"%)")
     }
-    moveSlider(2)
+    // moveSlider(2)
 })
