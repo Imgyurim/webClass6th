@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 $(window).scroll(function(){
     let winst = $(window).scrollTop()
-    let con2top = $(".con2").feeset().top
+    let con2top = $(".con2").offset().top
     if(winst>=con2top){
         $(".con2").addClass("on")
     }else{

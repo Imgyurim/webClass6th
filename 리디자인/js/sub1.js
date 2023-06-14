@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         let winst = $(window).scrollTop()
-        let con2top = $(".con2").feeset().top
+        let con2top = $(".con2").offset().top
         if(winst>=con2top){
             $(".con2").addClass("on")
         }else{
@@ -25,28 +25,31 @@ $(document).ready(function(){
            //  console.log($(this).next().length)
             if($(this).next().length!=0){
                 let posTop = $(this).next().offset().top
-            $("html,body").stop().animate({scrollTop:posTop},1000)
+            $("html,body").stop().animate({scrollTop:posTop-95},1000)
             }
            }else{
             //마우스 휠을 올렸을 때
              //  console.log($(this).prev().length)
             if($(this).prev().length!=0){
            let posTop = $(this).prev().offset().top
-           $("html,body").stop().animate({scrollTop:posTop},1000)
+           $("html,body").stop().animate({scrollTop:posTop-95},1000)
             }
            }
            return false
     })
 
-    // $(".main_p .tab>li").click(function(){
-    //     let idx = $(this).index()
-    //     $(".main_p .tab>li").removeClass("on")
-    //     $(this).addClass("on")
+    $(".main_p .tab>li").click(function(){
+        let idx = $(this).index()
+        $(".main_p .tab>li").removeClass("on")
+        $(this).addClass("on")
 
-    //     $(".main_p .maincontent > .items").removeClass("on")
-    //     $(".main_p .maincontent > .items").eq(idx).addClass("on")
+        $(".main_p .bg_category > .bg_items").removeClass("on")
+        $(".main_p .bg_category > .bg_items").eq(idx).addClass("on")
 
-    // });
+        $(".main_p .maincontent > .items").removeClass("on")
+        $(".main_p .maincontent > .items").eq(idx).addClass("on")
+
+    });
 
     $(".main_p .menu_img>li").click(function(){
         let idx = $(this).index()
