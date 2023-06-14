@@ -35,7 +35,7 @@ $(document).ready(function(){
            $("html,body").stop().animate({scrollTop:posTop-95},1000)
             }
            }
-           return false
+           return 
     })
 
     $(".main_p .tab>li").click(function(){
