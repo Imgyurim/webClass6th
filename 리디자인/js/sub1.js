@@ -114,7 +114,27 @@ $(document).ready(function(){
         if(count<0){count=5} //예외처리
         // moveSlider(count)
         
-    })
+    });
+    $(".subpage3 .tabTip_b>li").click(function(){
+        let idx = $(this).index()
+        $(".subpage3 .tabTip_b>li").removeClass("on")
+        $(this).addClass("on")
 
+        $(".subpage3 .cost_text > li").removeClass("on")
+        $(".subpage3 .cost_text > li").eq(idx).addClass("on")
+    });
+
+    $(".subpage11 .tab>li").click(function(){
+        let idx = $(this).index()
+        $(".subpage11 .tab>li").removeClass("on")
+        $(this).addClass("on")
+        
+        $(".subpage11 .content_items > .content_list").removeClass("on")
+        $(".subpage11 .content_items > .content_list").eq(idx).addClass("on")
+
+        $(".subpage11 .list > .list_top").removeClass("on")
+        $(".subpage11 .list > .list_top").eq(idx).addClass("on")
+
+    });
 
 })

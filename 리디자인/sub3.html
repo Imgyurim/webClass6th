@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>subpage3</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <title>홍콩다방 서브페이지3</title>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./js/sub1.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/mainSlide.js"></script>
 </head>
 <body>
+     <!-- 마우스커서 -->
+     <div id="cursor" style="top: 901px; left: 290px;"></div>
+     <script src="./js/mouse.js"></script>
+     <!-- 마우스커서 -->
     <header>
         <div class="innerHeader">
             <div class="headerLogo">
                     <h1>
-                        <a href="#">
+                        <a href="./main.html">
                             <img src="./img/headerLogo.png" alt="홍콩다방 로고">
                         </a>
                     </h1>
@@ -22,17 +34,18 @@
             <nav>
                 <ul>
                     <li><a href="#">홍콩다방</a></li>
-                    <li><a href="#">메뉴</a>
+                    <li><a href="./sub1.html">메뉴</a>
                         <ul>
-                            <li><a href="#">시그니쳐 드링크</a></li>
+                            <li><a href="#">시그니쳐</a></li>
                             <li><a href="#">베이커리</a></li>
-                            <li><a href="#">커피</a></li>
                             <li><a href="#">콜드 드링크</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">두배우유</a></li>
                             <li><a href="#">콜라보메뉴</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">매장안내</a></li>
-                    <li class="Establishment"><a href="#">창업문의</a>
+                    <li><a href="./sub2.html">매장안내</a></li>
+                    <li class="Establishment"><a href="./sub3.html">창업문의</a>
                         <ul>
                             <li><a href="#">사업장 협업 문의</a></li>
                             <li><a href="#">가맹 절차 및 비용</a></li>
@@ -95,10 +108,10 @@
                             <ul>
                                 <li class="bg_top">
                                     <ul>
-                                        <li><img src="./img/b_lanfong.png" alt="랑퐁유엔"></li>
-                                        <li><img src="./img/b_milkTea.png" alt="홍콩행 밀크티"></li>
-                                        <li><img src="./img/b_milkteacoffee.png" alt="동윤영"></li>
-                                        <li><img src="./img/b_eggwaffle.jpg" alt="까이딴자이"></li>
+                                        <li><img src="./img/bak/b_lanfong.png" alt="랑퐁유엔"></li>
+                                        <li><img src="./img/drink/b_milkTea.png" alt="홍콩행 밀크티"></li>
+                                        <li><img src="./img/drink/b_milkteacoffee.png" alt="동윤영"></li>
+                                        <li><img src="./img/bak/b_eggwaffle.jpg" alt="까이딴자이"></li>
                                     </ul>
                                 </li>
                                 <li class="bg_bottom">
@@ -178,22 +191,45 @@
                         <div class="cost tabMenu_b">
                             <h2>초기비용</h2>
                             <ul class="list tabTip_b">
-                                <li class="on"><a href="#">커피머신 보유 사업장</a></li>
-                                <li><a href="#">커피머신 미보유 사업장</a></li>
+                                <li class="on">커피머신 보유 사업장</li>
+                                <li>커피머신 미보유 사업장</li>
                             </ul>
-                            <ul class="a">
-                                <li>
-                                    <h3><span>시그니처 홍콩</span> 진행시</h3>
-                                    <p>교육비 150만원>100만원<br>
-                                        초도 물류비 50먼원<br>
-                                        150만원</p>
+                            <ul class="cost_text">
+                                <li class="on">
+                                    <ul>
+                                        <li>
+                                            <h3><span>시그니처 홍콩</span> 진행시</h3>
+                                            <p>교육비 150만원 > 100만원<br>
+                                                초도 물류비 50만원</p>
+                                            <p class="cc">150만원</p>
+                                        </li>
+                                        <li>
+                                            <h3><span>시그니처 음료와 베이커리 모두</span> 진행시</h3>
+                                            <p>교육비 150만원 > 100만원<br>
+                                                초도 물류비 130만원<br>
+                                                집기비용 95만원</p>
+                                            <p class="cc">325만원</p>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    <h3><span>시그니처 음료와 베이커리</span> 모두 진행시</h3>
-                                    <p>교육비 150만원>100만원<br>
-                                        초도 물류비 50먼원<br>
-                                        참가비용 95만원<br>
-                                        325만원</p>
+                                    <ul>
+                                        <li>
+                                            <h3><span>시그니처 홍콩</span> 진행시</h3>
+                                            <p>교육비 150만원 >  100만원<br>
+                                                초도 물류비 50만원<br>
+                                                소모품 비용 15만원</p>
+                                            <p class="cc">165만원</p>
+                                        </li>
+                                        <li>
+                                            <h3><span>시그니처 음료와 베이커리 모두</span> 진행시</h3>
+                                            <p> 교육비 150만원 > 100만원<br>
+                                                초도 물류비 130만원<br>
+                                                집기비용 95만원 <br>
+                                                소모품 비용 40만원</p>
+                                            <p class="cc">365만원</p>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                             <p class="pp">본 견적에 나와있는 기기들은 필수 구매가 아님으로<br>
@@ -222,8 +258,8 @@
     <footer>
         <div class="footerLogo">
             <h1>
-                <a href="#">
-                    <img src="./img/footerLogo.png" alt="홍콩다방 로고">
+                <a href="./main.html">
+                    <img src="./img/headerLogo.png" alt="홍콩다방 로고">
                 </a>
             </h1>
         </div>
@@ -235,11 +271,16 @@
             <p>이메일 주소 : contact@hkdabang.com｜ 주소 : 서울특별시 영등포구 당산로41길 11, 제7층 제이703호 (당산동4가, 당산 SK V1 center)
             </p>
         </div>
-        <div class="footerTop">
-            <a href="#">
-                <p>TOP</p>
-            </a>
+        <div class="footerSns">
+            <ul>
+                <li><a href="https://www.youtube.com/results?search_query=%ED%99%8D%EC%BD%A9%EB%8B%A4%EB%B0%A9"><img src="./img/youtube-line (1).svg" alt="youtube"></a></li>
+                <li><a href="https://www.instagram.com/hongkongdabang_korea/?hl=ko"><img src="./img/insta.png" alt="instagram"></a></li>
+                <li><a href="https://www.facebook.com/people/%ED%99%8D%EC%BD%A9%EB%8B%A4%EB%B0%A9_hongkongdabang/100063591938117/"><img src="./img/facebook-line.svg" alt="facebook"></a></li>
+            </ul>
         </div>
+        <span class="footerTop">
+            <a href="#"><img src="./img/arrow-up-line.svg" alt="top"></a>
+        </span>
     </footer>
 </body>
 </html>
