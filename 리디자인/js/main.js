@@ -55,15 +55,15 @@ window.onload = function(){
        },
      });
 
-    //  let station6 = new Swiper(".subpage11 .station6",{
-    //   loop:true,
-    //   direction:"horizontal",
-    //   slidesPerView: 4,
-    //     navigation: {
-    //      nextEl: '.swiper-button-next',
-    //      prevEl: '.swiper-button-prev',
-    //    },
-    //  });
+     let station6 = new Swiper(".subpage11 .station6",{
+      loop:true,
+      direction:"horizontal",
+      slidesPerView: 4,
+        navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+     });
    
 
 

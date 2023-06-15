@@ -131,10 +131,13 @@ $(document).ready(function(){
         
         $(".subpage11 .content_items > .content_list").removeClass("on")
         $(".subpage11 .content_items > .content_list").eq(idx).addClass("on")
+       
+        $(".subpage11 .bot_list  .bot_items").removeClass("on")
+        $(".subpage11 .bot_list  .bot_items").eq(idx).addClass("on")
 
         $(".subpage11 .list > .list_top").removeClass("on")
         $(".subpage11 .list > .list_top").eq(idx).addClass("on")
-
     });
+
 
 })
