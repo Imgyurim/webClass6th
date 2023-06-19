@@ -1,0 +1,14 @@
+$(document).ready(function(){
+  
+    $(".btn").click(function(){
+        // textAni(".title",{
+        //     aniDelay:0.5,
+        //     aniSpeed:1,
+        //     textsize:80
+        // })
+        textAni(".title",{
+            textSize:100,
+            aniSpeed:0.5
+        })
+    })
+})
