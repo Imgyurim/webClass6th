@@ -29,39 +29,59 @@ header{
     width: 100%;
     height: 100px;
 }
-nav ul{
-    width: 200px;
-    /* height: 500px; */
-    /* border:1px solid black; */
-    padding:0 10px;
-}
-nav ul>li{
-    /* background: #c8c8c8; */
+.gnb {
     position: relative;
-    padding:10px;
-    display: block;
-
+    z-index: 10;
+    /* position :relative를 해서 z-index값을 높여서 이미지 슬라이드보다 앞쪽에 배치되도록  */
 }
-nav ul>li:hover{
-    background: #000;
-    color: #fff;
+.gnb>li{
+    height:50px;
+    transition:all 0.5s ease 0s;
+    position:relative;
+}
+
+nav>li>a{
+    display:flex;
+    height:50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+nav>li>ul{
+    transition:all 0.5s ease 0s;
+    overflow: hidden;
+    position:absolute;
+    left:200px;
+    top:0;
+    width:0%;
+    height:100%;
+    border:1px solid red;
+    display:flex;
+    background:#ccc;
+    opacity: 0;;
+}
+nav:hover ul{
+    width:500%;
     opacity: 1;
 }
-nav ul>li>ul{
-  position: absolute;
-  left:190px;
-  top:0;
-  width:1000px;
-  display: flex;
-  opacity: 0;
+nav>li>ul>li{
+    width:20%;
+    border:1px solid blue;
+    text-align: center;    
+    line-height:50px;
+    color:#000;
 }
-nav ul>li>ul>li{
-    display: block;
+nav li:hover{
+    background:#000;
+    color:#fff;
 }
 
 main{
     width: calc(100% - 200px);
     height: 850px;
+}.station{
+    width: calc(100% -200px);
+    height: 400px;
 }
 .slide{
     width: 100%;
