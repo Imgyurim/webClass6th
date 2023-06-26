@@ -1,0 +1,1 @@
+(this.webpackJsonpwaffle=this.webpackJsonpwaffle||[]).push([[69],{389:function(l,i,o){"use strict";var c=function(f){var a=[],n=null,e=function(){for(var t=arguments.length,u=new Array(t),r=0;r<t;r++)u[r]=arguments[r];a=u,!n&&(n=requestAnimationFrame(function(){n=null,f.apply(void 0,a)}))};return e.cancel=function(){n&&(cancelAnimationFrame(n),n=null)},e};i.a=c}}]);
