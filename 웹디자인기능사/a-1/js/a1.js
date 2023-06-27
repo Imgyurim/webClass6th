@@ -1,11 +1,13 @@
 $(document).ready(function(){
-    let count = 0;
-    setInterval(function(){
-        count++;
-        if(count>2){count=0}
-        $(".train").css("transform","translateX(-"+(33.3*count)+"%)")
-    },2000)
+ 
+    $(".btnPopup").click(function(){
+        $(".popUP").addClass("on")
+    })
+    $(".btnPopupClose").click(function(){
+        $(".popUP").removeClass("on")
+    })
 
+    
     $(".tabMenu>dt").click(function(){
         $(".tabMenu>dt").removeClass("on")
         $(this).addClass("on")
@@ -13,11 +15,13 @@ $(document).ready(function(){
         $(this).next().addClass("on")
     })
     
-    $(".btnPopup").click(function(){
-        $(".popUP").addClass("on")
-    })
-    $(".btnPopupClose").click(function(){
-        $(".popUP").removeClass("on")
-    })
+    let count = 0;
+    setInterval(function(){
+        count++;
+        if(count>2){count=0}
+        $(".train").css("transform","translateY(-"+(33.3*count)+"%)")
+    },2000)
+
+ 
 })
 
