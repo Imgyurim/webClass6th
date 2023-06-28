@@ -1,7 +1,15 @@
 *{margin:0;padding:0;}
+ul,ol{list-style: none;}
+a{text-decoration:none;color:inherit;}
 body{
-    /* background: #feecbe; */
-
+    background: #fef9f3;
+}
+.navbtn{
+    position: fixed;
+    right:0;
+    top: 0;
+    /* border-radius: 50px; */
+    border: 1px solidr red;
 }
 .intro{
     display: flex;
@@ -9,9 +17,9 @@ body{
     align-items: center;   
     width: 100%;
     height: 100vh;
-    background: #cee9fa;
+    background:#f8b133;
 }
-span{
+.intro span{
     position:relative;
     display: inline-block;
     width: 80px;
@@ -21,7 +29,7 @@ span{
     margin: 5px;
     background: #232323;
 }
-.space{
+.intro .space{
     position:relative;
     display: inline-block;
     width: 200px;
@@ -31,7 +39,7 @@ span{
     margin: 5px;
     background: #232323;
 }
-span:before{
+.intro span:before{
     content: "";
     position:absolute;
     top:3px;
@@ -45,58 +53,126 @@ span:before{
     border-bottom: 1px solid #0004;
     border-top:1px solid #0009;
 }
-span i{
+.intro span i{
     position: relative;
     color: #Fff;
     font-size: 1.5em;
     text-transform: uppercase;
     padding-left: 10px;
 }
-.intro1{
-    width: 100%;
-    margin:0 auto;
-    height: 100vh;
-    background: #fef9f3;
-}
-.intro1 p{
-    font-size: 100px;
-    font-weight: bold;
-    color:#f26122;
+.contents{
+    display: flex;
+    overflow: hidden;
+    width: calc((100%)*2);
 }
 .resume{
     width: 100%;
     margin:0 auto;
-    height: 100vh;
-    background: #fef9f3;
+    height: 1300px;
 }
-.contents{
-    width: 100%;
-    margin:0 auto;
-    height: 100vh;
-
+.nav>ul{
+    display: flex;
+    justify-content: space-around;
 }
-.contents h1{
-    font-size: 100px;
+.nav>ul>li{
+    background: #cee9fa;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.aboutMe{
+    width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+}
+.aboutMe_top{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.aboutMe_top>li{
+    font-size: 1.5rem;
     font-weight: bold;
+    color: #3b54a6;
+    
+}
+.aboutMe .aboutMe_bottom{
+    position: relative;
+}
+.aboutMe .aboutMe_bottom>dt{
     text-align: left;
-    color:#f26122;
-    text-transform: uppercase;
-}
-.popup{
-    width: 100%;
-    margin:0 auto;
-    height: 100vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3b54a6;
+    margin-bottom: 170px;
 
 }
-.banner{
-    width: 100%;
-    margin:0 auto;
-    height: 100vh;
 
+.aboutMe h1{
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
-.redesign{
+.aboutMe dl>dd{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#000;
+    border-bottom: 1px solid black;
+}
+.aboutMe dl>dd:last-of-type{
+    border-bottom: none;
+}
+.eduEx{
+    position:absolute;
+    left:280px;
+    top: 10px;
+}
+.lic{
+    position:absolute;
+    left:280px;
+    top: 240px;
+}
+.like{
+    position: absolute;
+    left: 280px;
+    top: 510px;
+    display: flex;
+}
+.like li{
+    padding-right: 40px;
+}
+.skillList>ul{
+    position: absolute;
+    left:280px;
+    bottom: -160px;
+    display: flex;
+    justify-content: center;
+}
+.skillList>ul>li{
+    width: 100px;
+    height: 100px;
+    padding-right: 30px;
+    text-align: center;
+}
+.skillList>ul>li img{
     width: 100%;
-    margin:0 auto;
+    height: 100%;
+    object-fit: cover;
+}
+.skillList>ul>li p{
+    font-size: 0.9rem;
+    margin-top:10px;
+}
+.project{
+    width: 100%;
+    margin: 0 auto;
     height: 100vh;
-
+    border: 1px solid black;
+}
+.project_c{
+    width: 1400px;
+    margin:0 auto;
+}
+.project_c ul{
+    display: flex;   
 }
