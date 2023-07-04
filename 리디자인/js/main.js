@@ -1,5 +1,5 @@
 window.onload = function(){
-
+  
   
     let station1 = new Swiper(".main_p .station1",{
      loop:true,
