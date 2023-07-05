@@ -1,5 +1,9 @@
 *{margin:0;padding:0;}
-ul,ol{list-style: none;color:inherit;}
+a{text-decoration: none; color: inherit;}
+ul,ol{list-style: none;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight:400;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: 400;}
 
 .wrap{
     font-family: 'Noto Sans KR', sans-serif;
@@ -245,17 +249,10 @@ main{
     height: 100vh;
     position: relative;
 }
-.popup svg{
-    height: 100vh;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-}
 .popup>h1{
     position: absolute;
-    left: 85px;
-    top: 133px;
+    left: 182px;
+    top: 55px;
     text-transform: uppercase;
     font-size: 36px;
 }
@@ -263,19 +260,17 @@ main{
     font-size:2.5rem;
     padding-right: 10px;;
 }
-.popupW{
-    width: 95%;
-    height: 900px;
-    margin:0 auto;
-    position: relative;
+.popupbox{
+    margin-left: 149px;
+    margin-top: 147px;
 }
-.popupW .cls-1{fill:#fff;stroke:#a4aff7;stroke-width:3px;}
-.popupW .cls-2{fiLl:#a4aff7;}
-.popupW .cls-3{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:3px;}
+.popupbox img{
+    width: 91%;
+}
 .popupImg{
     position: absolute;
     left: 50%;
-    top: 55%;
+    top: 50%;
     transform: translate(-50%,-50%);
     width: 1400px;
 }
@@ -317,21 +312,18 @@ main{
 }
 .popuppopup{
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: #fff;
-    width: 1150px;
-    height: 640px;
-    border: 4px solid black;
+    width: 980px;
+    height: 610px;
+    border: 3px solid black;
 }
 .mobal_close{
     position: absolute;
     right: 15px;
     top: 4px;
-}
-.popup_IMG>ul{
-   
 }
 .popup_IMG>ul>li{
     position: absolute;
@@ -346,53 +338,24 @@ main{
 }
 /* banner */
 .banner{
-    /* width: 100%; */
     height: 100vh;
     position: relative;
 }
 .bannerbox{
-    border: 1px solid red;
-    width: 1453PX;
+    width: 1591PX;
     position: absolute;
-    height: 967px;
-    left: 110px;
+    height: 856px;
+    left: 150px;
     top: 95px;
 }
-.bannerbox .cls-1,.cls-5{fill:#fff;}
-.bannerbox .cls-1{stroke:#ffbfb9;stroke-miterlimit:10;}
-.bannerbox .cls-2{fill:#f9d2cd;}
-.bannerbox .cls-3{fill:#fcccc5;}
-.bannerbox .cls-4{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}
-
-.bannerbox>svg{
-    height: 100vh;
-    position: absolute;
-    top: 75px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.bannerW{
-    width: 95%;
-    height: 900px;
-    margin:0 auto;
-}
-.bannerW .cls-1,.cls-3,.cls-5{fill:#fff;}
-.bannerW .cls-1{stroke:#ff99d1;}
-.bannerW .cls-1,.cls-3,.cls-6{stroke-miterlimit:10;}
-.bannerW .cls-6,.cls-7{stroke-width:2px;}
-.bannerW .cls-2{fill:#ff99d1;}
-.bannerW .cls-3{stroke:#ff99d1;}
-.bannerW .cls-4,.cls-6,.cls-7{fill:none;stroke:#fff;}
-.bannerW .cls-4,.cls-7{stroke-linecap:round;stroke-linejoin:round;}
-.bannerW .cls-4{stroke-width:3px;}
-.bannerline{
-    fill: #fff;
-    stroke: #1b1f42;
+.bannerbox img{
+    width: 100%;
+    height: 100%;
 }
 .banner>h1{
     position: absolute;
-    left: 115px;
-    top: 12px;
+    left: 294px;
+    top: 109px;
     text-transform: uppercase;
 }
 .banner>h1 span{
@@ -408,31 +371,70 @@ main{
 }
 .bannerImg>ul>li{
     position: absolute;
-    left: 50%;
+    left: 49%;
     top: 200px;
-    transform: translateX(-50%);
+    transform: translateX(-49%);
+    width: 1584px;
 }
 .bannerImg>ul>li img{
-    width: 1803px;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.redesign{
-    height:100vh;
+.bannerImg>ul>li>ul{
+    width: 58%;
+    margin: 44px auto;
+    height: 190px;
 }
-.redesign .cls-1,.cls-3{fill:#fff;}
-.redesign .cls-1{stroke:#afaeb3;stroke-width:5px;}
-.redesign .cls-1,.cls-3,.cls-5{stroke-miterlimit:10;}
-.redesign .cls-2{fill:#ffdfb0;}
-.redesign .cls-3{stroke:#020202;}
-.redesign .cls-4{fill:#606060;}
-.redesign .cls-5{fill:none;stroke:#606060;stroke-width:2px;}
+.tabmenu{
+    position: absolute;
+    left: 151px;
+    top: 42px;
+}
+.tab{
+    display: flex;
+}
+.tab>li{
+    margin-right: 7px;
+    padding: 15px 18px;
+    background: #fbe4b8;
+    border-radius: 10px 10px 0 0;
+}
+.tab>li.on{
+    margin-right: 7px;
+    padding: -1px 105px;
+    background: #fcccc5;
+    border-radius: 10px 10px 0 0;
+}
+.bannerbtn{
+    position: absolute;
+    left: 178px;
+    top: 124px;
+}
+.prevbtn{
+    border: 1px solid red;
+    padding: 25px 8px;
+    margin: 0 -19px;
+}
+.nextbtn{
+    border: 1px solid red;
+    padding: 25px 8px;
+    margin: 0px 24px;
+}
+.redesignbox{
+    width: 1601px;
+    margin: 0 auto;
+    height: 100%;
+}
+.redesignbox img{
+    width: 100%;
+    height: 100%;
+}
 .contact{
     width: 100%;
     height: 100vh;
-    /* background: #1b1f42; */
+    background: #1b1f42;
 }
-
 .contact span:nth-of-type(1){
     background: #000;
     border-radius: 20px;
