@@ -275,7 +275,7 @@ main{
 .popupImg{
     position: absolute;
     left: 50%;
-    top: 53%;
+    top: 55%;
     transform: translate(-50%,-50%);
     width: 1400px;
 }
@@ -299,33 +299,76 @@ main{
 }
 .popupImg > ul > li:hover img {
     transform: scale(1.2);
-    filter: brightness(0.5);
+    filter: brightness(0.4);
     background: #000;
 }
 .popupImg >ul > li .info{
     font-size: 0;
 }
-.popupImg > ul > li:hover .info{
+.popupImg > ul > li:hover .info>p{
     position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 20;
-    font-size: 1.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    font-size: 1.5rem;
     font-weight: bold;
-    text-align: center
+    color:#fff;
 }
+.popuppopup{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    width: 1150px;
+    height: 640px;
+    border: 4px solid black;
+}
+.mobal_close{
+    position: absolute;
+    right: 15px;
+    top: 4px;
+}
+.popup_IMG>ul{
+   
+}
+.popup_IMG>ul>li{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.popup_IMG>ul>li>ul{    
+    margin-left:50px
 
+}
 /* banner */
 .banner{
     /* width: 100%; */
     height: 100vh;
     position: relative;
 }
-.banner svg{
+.bannerbox{
+    border: 1px solid red;
+    width: 1453PX;
+    position: absolute;
+    height: 967px;
+    left: 110px;
+    top: 95px;
+}
+.bannerbox .cls-1,.cls-5{fill:#fff;}
+.bannerbox .cls-1{stroke:#ffbfb9;stroke-miterlimit:10;}
+.bannerbox .cls-2{fill:#f9d2cd;}
+.bannerbox .cls-3{fill:#fcccc5;}
+.bannerbox .cls-4{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}
+
+.bannerbox>svg{
     height: 100vh;
     position: absolute;
+    top: 75px;
     left: 50%;
-    top: 0;
     transform: translateX(-50%);
 }
 .bannerW{
@@ -372,7 +415,7 @@ main{
 .bannerImg>ul>li img{
     width: 1803px;
     height: 100%;
-    object-fit: cover;s
+    object-fit: cover;
 }
 .redesign{
     height:100vh;
@@ -387,5 +430,28 @@ main{
 .contact{
     width: 100%;
     height: 100vh;
-    background: #1b1f42;
+    /* background: #1b1f42; */
 }
+
+.contact span:nth-of-type(1){
+    background: #000;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.contact span:nth-of-type(2){
+    border-radius: 20px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.contact span:nth-of-type(3){
+    background: green;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
