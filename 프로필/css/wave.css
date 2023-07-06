@@ -338,6 +338,7 @@ main{
 }
 /* banner */
 .banner{
+    margin-top: 52px;
     height: 100vh;
     position: relative;
 }
@@ -374,7 +375,7 @@ main{
     left: 49%;
     top: 200px;
     transform: translateX(-49%);
-    width: 1584px;
+    width: 1593px;
 }
 .bannerImg>ul>li img{
     width: 100%;
@@ -421,39 +422,105 @@ main{
     padding: 25px 8px;
     margin: 0px 24px;
 }
+.redesign{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 152px;
+    padding-bottom: 152px;
+}
 .redesignbox{
     width: 1601px;
     margin: 0 auto;
-    height: 100%;
+    height: 87vh;
 }
 .redesignbox img{
     width: 100%;
     height: 100%;
+}
+.redesign h1{
+    position: absolute;
+    left: 234px;
+    top: 53px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.hongkongmain{
+    position: absolute;
+    left: 19%;
+    top: 24%;
+}
+.hongkongmain figure{
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.hongkongmain>figure>img{
+    width: 100%;
+}
+.redesign_contents{
+    position: absolute;
+    top: 33%;
+    right: 18%;
+    font-weight: bold;
+}
+.redesign_contents h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.redesign_contents ul>li{
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 5px;
+}
+.redesign_contents ul>li span{
+    padding-left: 25px;
+}
+.redesign_contents ul>li>ul{
+    display: flex;
+    margin-left: 25px;
+}
+.redesign_contents ul>li .color1{
+    background: green;
+    width: 25px;
+    height: 25px;
+    margin-left: 19px;
+    margin-right: 10px;
+}
+.redesign_contents ul>li .color2{
+    background: green;
+    width: 25px;
+    height: 25px;
+}
+.redesign_List>li{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.redesign_List>li img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .contact{
     width: 100%;
     height: 100vh;
     background: #1b1f42;
 }
-.contact span:nth-of-type(1){
-    background: #000;
-    border-radius: 20px;
-    width: 50px;
-    height: 50px;
-    display: inline-block;
+.redesign a{
+    position: absolute;
+    right: 29%;
+    bottom: 43%;
+    width: 108px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
 }
-.contact span:nth-of-type(2){
-    border-radius: 20px;
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-}
-.contact span:nth-of-type(3){
-    background: green;
-    border-radius: 20px;
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-}
+.contactbox{
+    padding: 188px 0;
+    text-align: center;
 
+}
