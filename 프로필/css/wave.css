@@ -23,17 +23,21 @@ strong,b{font-weight: 400;}
     padding-top: 200px;
     width: 1000px;
     margin: 0 auto;
+    position: relative;
 }
 .inner-header .title p {
     text-align: left;
-    color: #ff99d1;
+    color: #fbe4b8;
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 200;
+    margin-bottom: 10px;
 }
-.headertitle .cls-1{fill:none;stroke:#ff99d1;stroke-miterlimit:10;}
-.headertitle .cls-2{fill:#ff99d1;}
-
+.text{
+    position: absolute;
+    left: 5px;
+    bottom: -10px;
+}
 .waves{
     position: relative;
     width: 100%;
