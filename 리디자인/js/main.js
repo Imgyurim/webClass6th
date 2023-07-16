@@ -36,16 +36,26 @@ window.onload = function(){
     });
     let station4 = new Swiper(".sns .station4",{
       loop:true,
-      // direction:"horizontal",
+      spaceBetween:10,
+      
+      // // direction:"horizontal",
         slidesPerView: 4,
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //     type: "progressbar",
+      //   },
+        autoplay:true,
+      //   speed:5
         pagination: {
           el: ".swiper-pagination",
           type: "progressbar",
         },
-        autoplay:true,
-        speed:5
-    
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
      });
+
      let station5 = new Swiper(".subpage11 .station5",{
       loop:true,
       direction:"horizontal",
@@ -66,6 +76,23 @@ window.onload = function(){
      });
    
 
+
+      // 버튼을 클릭했을 때 만약에 메뉴가 열려있는 상태라면? -> 메뉴를 닫는기능
+      // 버튼을 클릭했을 때 만약에 메뉴가 닫혀있는 상태라면? -> 메뉴를 여는기능
+  
+      let menuState = false;
+      $(".btnMoMenu").click(function(){
+          //btnMenu클래스 클릭했을 대 실행될 동작
+          if(menuState == false){
+              $(".btnMoMenu").addClass("close")
+              $(".monav").addClass("show")
+              menuState = true
+          }else{
+              $(".btnMoMenu").removeClass("close")
+              $(".monav").removeClass("show")
+              menuState = false
+          }
+          }) 
 
 }
  
